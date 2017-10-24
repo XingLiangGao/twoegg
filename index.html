@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.scrollBanner.js"></script>
 </head>
 <body>
+<!-- top -->
 <div id="topcon">
     <div class="top">
         <ul class="left">
@@ -30,6 +33,7 @@
         </ul>
     </div>
 </div>
+<!-- logo -->
 <div class="logo">
     <a href=""></a>
     <div id="search">
@@ -44,13 +48,14 @@
         </ul>
     </div>
 </div>
+<!-- 这是一个很长的nav，想错了 -->
 <div id="nav">
     <div class="navcon">
         <div class="shop">
             <a href="">全部商品分类</a><i></i>
             <div class="menue">
                 <ul>
-                    <li>
+                    <li class="list_01">
                         <strong></strong>
                         <h4><a href="">海外直购</a></h4>
                         <div>
@@ -58,7 +63,7 @@
                         <a href="">固态硬盘</a>
                         <a href="">奶粉</a></div>
                     </li>
-                    <li>
+                    <li class="list_02">
                         <strong></strong>
                         <h4><a href="">手机</a><a href="">摄影</a><a href="">苹果</a></h4>
                         <div>
@@ -67,41 +72,41 @@
                             <a href="">数码包</a>
                         </div>
                     </li>
-                    <li>
+                    <li class="list_03">
                         <strong></strong>
                         <h4><a href="">电脑</a><a href="">外设</a><a href="">办公</a></h4>
-                        <div>
+                        <div class="list_bot">
                             <a href="">笔记本</a>
                             <a href="">智能硬件</a>
                             <a href="">硬盘</a>
                         </div>
                     </li>
-                    <li>
+                    <li class="list_04">
                         <strong></strong>
                         <h4><a href="">家用电器</a></h4>
-                        <div>
+                        <div class="list_bot">
                             <a href="">电饭煲</a>
                             <a href="">电视</a>
                             <a href="">净水器</a>
                         </div>
                     </li>
-                    <li>
+                    <li class="list_05">
                         <strong></strong>
                         <h4><a href="">生活百货</a></h4>
-                        <div><a href="">汽车用品</a><a href="">个护清洁</a></div>
-                        <div><a href="">家居</a>
+                        <div class="list_bot"><a href="">汽车用品</a><a href="">个护清洁</a></div>
+                        <div class="list_bot"><a href="">家居</a>
                         <a href="">厨用</a>
                         <a href="">钟表</a>
                         <a href="">礼品</a></div>
-                        <div><a href="">服饰</a>
+                        <div class="list_bot"><a href="">服饰</a>
                         <a href="">女装</a>
                         <a href="">内衣</a>
                         <a href="">珠宝</a></div>
-                        <div><a href="">母婴</a>
+                        <div class="list_bot"><a href="">母婴</a>
                         <a href="">玩具</a>
                         <a href="">食品</a>
                         <a href="">酒饮</a></div>
-                        <div><a href="">鞋靴</a>
+                        <div class="list_bot"><a href="">鞋靴</a>
                         <a href="">箱包</a>
                         <a href="">运动</a>
                         <a href="">户外</a></div>
@@ -121,6 +126,147 @@
         <div class="nav_right">
             <a href="">购物车<span>0</span>件</a>
             <a href="">收藏提醒</a>
+        </div>
+        <div class="three">
+            <ul><h5>数码外设</h5><li><a href="">耳机</a></li>
+            <li><a href="">电脑外设</a></li>
+            <li><a href="">手机配件</a></li>
+            <li><a href="">音响</a></li>
+            <li><a href="">网络设备</a></li>
+            <li><a href="">办公设备</a></li>
+            <li><a href="">U盘/存储卡</a></li>
+            <li><a href="">解锁版手机</a></li></ul>
+            <ul><h5>电脑平板</h5><li><a href="">笔记本电脑</a></li>
+            <li><a href="">硬盘内存</a></li>
+            <li><a href="">电脑主板</a></li>
+            <li><a href="">声卡显卡</a></li>
+            <li><a href="">笔记本电脑包</a></li>
+            <li><a href="">平板设备</a></li>
+            <li><a href="">外置硬盘</a></li>
+            <li><a href="">固态硬盘</a></li>
+            <li><a href="">迷你主机</a></li>
+            <li><a href="">CPU处理器</a></li>
+            <li><a href="">散热设备</a></li></ul>
+            <ul><h5>家用电器</h5><li><a href="">清洁电器</a></li>
+            <li><a href="">个人护理</a></li>
+            <li><a href="">口腔清洁</a></li>
+            <li><a href="">生活电器</a></li></ul>
+            <ul><h5>生活百货</h5><li><a href="">男鞋女鞋</a></li>
+            <li><a href="">手表配件</a></li>
+            <li><a href="">美妆</a></li>
+            <li><a href="">太阳镜</a></li>
+            <li><a href="">服饰</a></li>
+            <li><a href="">品牌箱包</a></li>
+            <li><a href="">首饰</a></li>
+            <li><a href="">汽车配件</a></li>
+            <li><a href="">文具/耗材</a></li>
+            <li><a href="">成人服饰</a></li></ul>
+            <ul><h5>个护美妆</h5><li><a href="">面膜</a></li>
+            <li><a href="">润肤</a></li>
+            <li><a href="">面部彩妆</a></li>
+            <li><a href="">洗发水</a></li>
+            <li><a href="">个护清洁</a></li></ul>
+            <ul><h5>母婴商品</h5><li><a href="">婴儿喂养</a></li>
+            <li><a href="">婴儿服饰配件</a></li>
+            <li><a href="">儿童玩具</a></li></ul>
+            <ul><h5>营养保健</h5><li><a href="">营养类</a></li></ul>
+            <div><h5>热门品牌</h5><i></i></div>
+        </div>
+    </div>
+</div>
+<!-- 这是一个很大的banner图，心累 -->
+<div class="banner">
+    <div class="float_right">
+    <div class="right_01">
+
+    </div>
+    <div class="right_02">
+
+    </div>
+    <div class="right_03">
+        <dl>
+            <dt><h5>新蛋动态</h5><a href="">更多>></a></dt>
+            <dd>苹果特惠 百元蛋券抢不停!</dd>
+            <dd>小米品牌特享价!</dd>
+        </dl>
+    </div>
+    <div class="right_04">
+    </div>
+    </div>
+    <div class="bannercon">
+    </div>
+    <div class="count_down">
+        <span>限时抢购</span><i>剩余时间:</i><a href="">更多抢购商品<i></i></a>
+    </div>
+    <div class="banner_02">
+        <strong></strong>
+        <ul class="list_top">
+            <li><a href=""><img src="img/list_02.jpg"></a><p>华为 荣耀9 全网通 高配版 6GB+64GB 琥珀金 移动联通</p><span>￥2429.00</span></li>
+            <li><a href=""><img src="img/list_01.jpg"></a><p>买硬盘送支架!数量有限!先到先得!</p><span>￥259.00</span></li>
+            <li><a href=""><img src="img/list_03.jpg"></a><p>Midea 美的 电饭煲 5L大容量 圆灶釜底 24小时预约 MB</p><span>￥279.00</span></li>
+            <li><a href=""><img src="img/list_05.jpg"></a><p>乐为家纺 条纹格子水洗棉春秋被子初冬被芯 莱茵河畔 2</p><span>￥178.00</span></li>
+        </ul>
+        <ul class="list_bottom">
+            <li><a href=""><img src="img/list_08.jpg"></a><p>Apple iPad 平板电脑 9.7英寸(32G WLAN版/A9 芯片/R</p><span>￥2488.00</span></li>
+            <li><a href=""><img src="img/list_04.jpg"></a><p>Microsoft 微软 Surface Laptop 轻薄触控笔记本(13.5英</p><span>￥259.00</span></li>
+            <li><a href=""><img src="img/list_07.jpg"></a><p>舒适入睡 保护肩颈</p><span>￥258.00</span></li>
+            <li><a href=""><img src="img/list_01.jpg"></a><p>买硬盘送支架!数量有限!先到先得!</p><span>￥659.00</span></li>
+        </ul>
+        <strong></strong>
+    </div>
+    <h2><i>热卖区</i><strong>换一批</strong><b>热卖促销商品，不容错过，更多惊喜等你发现</b></h2>
+    <div class="hot">
+        <ul>
+            <li><a href=""><img src="img/A23-150-01N.jpg"></a><p>TP-LINK 普联 TL-SG1024T 24口全千兆以太网交换机 标准机架式 3种功</p><span>￥489.00</span><div class="icon"><img src="img/rqbk.png"></div><div class="rush">抢购</div></li>
+            <li><a href=""><img src="img/A10-026-76C.jpg"></a><p>索尼 WF-1000X全无线式蓝牙降噪耳机 香槟金色 小金豆</p><span>￥1599.00</span><div class="rush">抢购</div></li>
+            <li><a href=""><img src="img/A28-67R-7NP.jpg"></a><p>vivo X20 购买成功后即送3000积分, 更有精美礼品赠送!</p><span>￥3398.00</span><div class="icon"><img src="img/zj.png"></div><div class="rush">抢购</div></li>
+            <li><a href=""><img src="img/A23-163-296.jpg"></a><p>NETGEAR 美国网件 爱洛ARLO高清智能家用监控网络摄像头 VMS3230 </p><span>￥1988.00</span><div class="icon"><img src="img/mxsp.png"></div><div class="rush">抢购</div></li>
+        </ul>
+    </div>
+</div>
+<div class="review">
+    <i>好评热品</i>
+    <strong>热门好评商品，不要错过哦</strong>
+</div>
+<div class="accordion">
+    <div>
+        <img src="">
+        <p></p>
+        <span></span>
+        <a href=""></a>
+        <div class="head_por">
+            <i></i>
+            <img src="">
+        </div>
+    </div>
+    <div>
+        <img src="">
+        <p></p>
+        <span></span>
+        <a href=""></a>
+        <div class="head_por">
+            <i></i>
+            <img src="">
+        </div>
+    </div>
+    <div>
+        <img src="">
+        <p></p>
+        <span></span>
+        <a href=""></a>
+        <div class="head_por">
+            <i></i>
+            <img src="">
+        </div>
+    </div>
+    <div>
+        <img src="">
+        <p></p>
+        <span></span>
+        <a href=""></a>
+        <div class="head_por">
+            <i></i>
+            <img src="">
         </div>
     </div>
 </div>

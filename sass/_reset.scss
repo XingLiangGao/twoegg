@@ -2,13 +2,14 @@
 * @Author: Marte
 * @Date:   2017-10-23 14:51:01
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-10-23 22:44:30
+* @Last Modified time: 2017-10-24 20:40:50
 */
-body,ul,li,dl,dd,dt,p,ol,h1,h2,h3,h4,h5,h6,form,img,table,fieldset{margin:0;padding:0;font-family: tahoma,'宋体';}
+body,ul,li,dl,dd,dt,p,ol,h1,h2,h3,h4,h5,h6,form,img,table,fieldset{margin:0;padding:0;font-family: tahoma,'宋体';cursor:default;}
 ul,li,ol{list-style:none;}
 img,fieldset{border:0;}
 img{display:block;}
 a{text-decoration:none;color:#333;}
+a:hover{text-decoration:underline;}
 h1,h2,h3,h4,h5,h6{font-weight:normal;}
 body{font-size:12px;font-family:"微软雅黑";}
 input,a{outline:none;}
