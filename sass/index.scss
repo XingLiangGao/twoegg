@@ -1,0 +1,256 @@
+/*
+* @Author: Marte
+* @Date:   2017-10-23 14:50:06
+* @Last Modified by:   Marte
+* @Last Modified time: 2017-10-24 09:18:26
+*/
+@import "reset";
+#topcon{
+    width:100%;
+    background:#f1f1f1;
+}
+.top{
+    background:#f1f1f1;
+    width:1200px;
+    height:24px;
+    border-bottom:1px solid #e2e2e2;
+    margin:0 auto;
+    padding-left:7px;
+    ul{
+        li{
+            float:left;
+            line-height:24px;
+        }
+    }
+    .left{
+        float:left;
+        li{
+            a{margin-right:11px;}
+        }
+        li:nth-of-type(1){
+            background:url(../img/1.png) -2px 7px no-repeat;
+            padding-left:14px;
+
+        }
+        li:nth-of-type(1):hover{
+            background:url(../img/1.png) -2px -13px no-repeat;
+            a{
+                text-decoration:underline;
+            }
+        }
+        li:nth-of-type(2){background:url(../img/1.png) 0 -127px no-repeat;padding-left:20px;}
+        li:nth-of-type(2):hover{
+            background:url(../img/1.png) 0 -152px no-repeat;
+            a{
+                text-decoration:underline;
+            }
+        }
+    }
+    .right{
+        float:right;
+        li{
+            padding:0 8px;
+        }
+        li:nth-of-type(1){
+            a:nth-of-type(1){margin-right:10px;}
+            a:nth-of-type(2){margin-left:10px;}
+        }
+        li:nth-of-type(1){
+            a:nth-of-type(1):hover{text-decoration:underline;}
+            a:nth-of-type(2):hover{text-decoration:underline;}
+        }
+        li:nth-of-type(3){
+            a:hover{text-decoration:underline;}
+        }
+        li:nth-of-type(4){
+            position:relative;
+            i{display:inline-block;width:6px;height:3px;line-height:24px;background:url(../img/2.png) 0 -27px no-repeat;margin-left: 8px;margin-bottom:3px;}
+            div{display:none;width:93px;height:26px;padding:5px 10px;position:absolute;text-align:center;left:-36px;top:23px;box-shadow: 2px 2px 5px rgba(0,0,0,.2);border: 1px solid #eee;background:#fff;}
+        }
+        li:nth-of-type(4):hover{
+            background:#fff;
+            i{background:url(../img/2.png) -10px -27px no-repeat;}
+            div{display:block;}
+        }
+        li:nth-of-type(5){
+            a:hover{text-decoration:underline;}
+        }
+        li:nth-of-type(6){
+            position:relative;
+            i{display:inline-block;width:6px;height:3px;line-height:24px;background:url(../img/2.png) 0 -27px no-repeat;margin-left: 8px;margin-bottom:3px;}
+            .phone{
+                display:none;
+                width:126px;
+                position:absolute;
+                left:-68px;
+                padding:3px 10px 6px;
+                background:#fff;
+                box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+                text-align:center;
+                a{color:#fff;}
+                p:nth-of-type(1){font-size:14px;color:#fe7b23;font-weight:bold;}
+                p:nth-of-type(2){font-weight:bold;}
+                strong:nth-of-type(1){width:60px;height:25px;background:#4f9ee7;text-align:center;line-height:25px;float:left;margin-right:4px;}
+                strong:nth-of-type(2){width:60px;height:25px;background:#4f9ee7;text-align:center;line-height:25px;float:left;}
+            }
+        }
+        li:nth-of-type(6):hover{
+            background:#fff;
+            i{background:url(../img/2.png) -10px -27px no-repeat;}
+            .phone{display:block;}
+        }
+
+    }
+}
+.logo{
+    width:1200px;
+    height:86px;
+    margin:0 auto;
+    >a{display:inline-block;width:318px;height:65px;background:url(../img/logo.png) no-repeat;margin:11px 0 0 4px;float:left;}
+    #search{
+        float:left;
+        margin-left: 46px;
+        input:nth-of-type(1){width:337px;height:30px;border: 2px solid #f60;margin:18px 0 10px;padding:0 6px;float:left;}
+        input:nth-of-type(2){width:98px;height:34px;background:#f60;color:#fff;border:0;float:left;margin:18px 0 10px;}
+        ul{
+            li{float:left;padding-right:17px;border-right: 1px solid #767676;color: #767676;height:12px;line-height:12px;margin-left:15px;}
+            li:nth-of-type(1){margin-left:6px;}
+            li:nth-of-type(5){border-right:0;}
+        }
+    }
+}
+#nav{width:100%;height:40px;background:#10286C;margin-bottom: 10px;}
+.navcon{
+    width:1200px;
+    height:40px;
+    margin:0 auto;
+    .shop{
+        width:179px;
+        height:40px;
+        background:#f60;
+        float:left;
+        text-align:center;
+        line-height:40px;
+        position:relative;
+        a{
+            color:#fff;
+            font: 14px/42px microsoft yahei;
+        }
+        .menue{
+            position:absolute;
+            top:39px;
+            width:175px;
+            height:465px;
+            border: 2px solid #f60;
+            overflow: hidden;
+            ul{
+                text-align: left;
+                li{
+                    width:100%;
+                    height:60px;
+                    padding: 10px 15px 0 20px;
+                    border-bottom:1px solid #e5e5e5;
+                    position:relative;
+                    h4{
+                        height:22px;
+                        a{display:inline-block;height:100%;line-height:22px;color:#000;font-size:14px;font-weight:bold;float:left;margin-right:8px;}
+                    }
+                    >div{
+                        height:18px;
+                        margin-top:2px;
+                        >a{color:#666;margin-right:6px;line-height:18px;display:inline-block;height:100%;float:left;font-size:12px;}
+                    }
+                }
+                li:nth-of-type(1){
+                    strong{
+                        display:inline-block;
+                        width:14px;
+                        height:13px;
+                        background:url(../img/banner_sprit.png) 0 1px no-repeat;
+                        position:absolute;
+                        top:15px;
+                        left:4px;
+                    }
+                }
+                li:nth-of-type(2){
+                    strong{
+                        display:inline-block;
+                        width:14px;
+                        height:13px;
+                        background:url(../img/banner_sprit.png) 0 -21px no-repeat;
+                        position:absolute;
+                        top:15px;
+                        left:4px;
+                    }
+                }
+                li:nth-of-type(3){
+                    strong{
+                        display:inline-block;
+                        width:14px;
+                        height:13px;
+                        background:url(../img/banner_sprit.png) 0 -43px no-repeat;
+                        position:absolute;
+                        top:15px;
+                        left:4px;
+                    }
+                }
+                li:nth-of-type(4){
+                    strong{
+                        display:inline-block;
+                        width:14px;
+                        height:13px;
+                        background:url(../img/banner_sprit.png) 0 -63px no-repeat;
+                        position:absolute;
+                        top:15px;
+                        left:4px;
+                    }
+                }
+                li:nth-of-type(5){
+                    border-bottom:0;
+                    strong{
+                        display:inline-block;
+                        width:14px;
+                        height:13px;
+                        background:url(../img/banner_sprit.png) 0 -84px no-repeat;
+                        position:absolute;
+                        top:15px;
+                        left:4px;
+                    }
+                    >div{height:27px;}
+                }
+            }
+        }
+    }
+    ul{
+        float:left;
+        li{
+            float:left;
+            padding: 0 20px;
+            height:40px;
+            line-height:40px;
+            a{
+                color:#fff;
+                font: 14px/40px microsoft yahei;
+            }
+        }
+        li:nth-of-type(1){padding-left:30px;}
+    }
+    .nav_right{
+        float:right;
+        a{
+            display:inline-block;
+            width:110px;
+            height:36px;
+            color:#fff;
+            background:#f60;
+            border: 2px solid #f60;
+            text-align:center;
+            line-height:36px;
+            float:left;
+            span{
+                color: #ffb380;
+                margin:0 8px;
+            }
+        }
+    }
+}
