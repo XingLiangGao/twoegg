@@ -11,10 +11,6 @@ function getTime(obj){
                 m = Math.floor((a - b)/1000/60%60);
                 s = Math.floor((a - b)/1000%60);
                 ee[0].innerHTML = d;
-                h = h + 12;
-                if(parseInt(h) < 10){
-                    h = "0" + h;
-                }
                 ee[1].innerHTML = h;
                 ee[2].innerHTML = m;
                 if(parseInt(s) < 10){

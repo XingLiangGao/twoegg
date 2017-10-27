@@ -1,0 +1,14 @@
+//设置配置文件
+require.config({
+    paths : {
+        "jquery" : "jquery",
+        "cookie" : "jquery.cookie",
+        "index"  : "index"
+    }
+})
+//导入依赖文件
+require(["jquery","cookie","index"],function($,cookie,index){
+    $(function(){
+
+    })
+})

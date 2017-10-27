@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2017-10-27 10:39:15
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-10-27 18:22:02
+* @Last Modified time: 2017-10-27 22:30:13
 */
 @import "reset";
 #topcon{
@@ -1321,11 +1321,12 @@
             overflow:hidden;
             float:left;
             margin-left:11px;
-            border:1px solid #ccc;
+            //border:1px solid #ccc;
             .pro_ri1{
-                width:100%;
+                width:1006px;
                 overflow:hidden;
                 margin-bottom:10px;
+                border:1px solid #ccc;
                 >ul{
                     width:100%;
                     overflow:hidden;
@@ -1408,7 +1409,7 @@
                 }
             }
             .pro_ri2{
-                width:100%;
+                width:1006px;
                 overflow:hidden;
                 border:1px solid #ccc;
                 >ul{
@@ -1554,6 +1555,7 @@
             }
             .pro_ri3{
                 ul{
+                    margin-top:42px;
                     li{
                         width: 220px;
                         padding:0 15px 20px 15px;
@@ -1566,6 +1568,10 @@
                         a{
                             color:#666;
                             line-height:18px;
+                            display:inline-block;
+                            width:218px;
+                            height:36px;
+                            overflow:hidden;
                         }
                         a:hover{
                             color:#1e4c9a;
@@ -1573,20 +1579,253 @@
                         span{
                             display:block;
                             width:88px;
-                            height:14px;
+                            height:15px;
                             background:url(../img/flat_rank.gif) no-repeat 0 2px;
                             margin-top:30px;
                             margin-bottom:10px;
+                            overflow:hidden;
+                            em{
+                                color:#0033a5;
+                                margin-left:61px;
+                            }
                         }
                         b{
+                            display:block;
                             color:#f60;
                             font-size:16px;
                             font-family: arial;
                             font-weight: bold;
                         }
+                        strong{
+                            display:inline-block;
+                            width:46px;
+                            height:25px;
+                            background:#f60;
+                            text-align:center;
+                            line-height:25px;
+                            color:#fff;
+                            margin-left:25px;
+                        }
+                        i{
+                            display:inline-block;
+                            width:44px;
+                            height:23px;
+                            border:1px solid #838383;
+                            text-align:center;
+                            line-height:23px;
+                            margin-left:5px;
+                            margin-top:22px;
+                        }
                     }
                 }
             }
+            .pro_ri3bot{
+                width:1006px;
+                overflow:hidden;
+                margin-bottom:10px;
+                div{
+                    float:right;
+                    span{
+                        display:inline-block;
+                        height:22px;
+                        color:#999;
+                        float:left;
+                        margin-right:26px;
+                        float:left;
+                        line-height:22px;
+                    }
+                    b{
+                        display:inline-block;
+                        width:61px;
+                        height:22px;
+                        border:1px solid #ddd;
+                        color:#a6a6a6;
+                        text-align:center;
+                        line-height:22px;
+                        float:left;
+                        margin-right:5px;
+                    }
+                    a{
+                        display:inline-block;
+                        width:19px;
+                        height:22px;
+                        line-height:22px;
+                        text-align:center;
+                        color:#666;
+                        margin-right:12px;
+                        float:left;
+                    }
+                    a:nth-of-type(1){
+                        border:1px solid #f60;
+                        color:#f60;
+                    }
+                    strong{
+                        display:inline-block;
+                        width:44px;
+                        height:22px;
+                        background:#f3f3f3;
+                        text-align:center;
+                        line-height:22px;
+                        color:#b7b7b7;
+                        border:1px solid #b7b7b7;
+                        float:left;
+                    }
+                }
+
+            }
+        }
+    }
+}
+.cyc{
+    width:100%;
+    margin-bottom:116px;
+    .cyc_con{
+        width:1200px;
+        height:105px;
+        border:1px solid #e6e6e6;
+        margin:0 auto;
+        h3{
+            border-bottom:1px solid #e6e6e6;
+            height:30px;
+            line-height:30px;
+            margin-left:10px;
+            font-weight:bold;
+            color:#666;
+        }
+        p{
+            height:37px;
+            line-height:37px;
+            margin-left:10px;
+            color:#666;
+        }
+    }
+}
+.serve{
+    width:1200px;
+    margin:0 auto;
+    overflow:hidden;
+    clear:both;
+    margin-bottom:80px;
+    ul{
+        p{
+            height:40px;
+            padding-left:34px;
+            font-weight:bold;
+            font-size:14px;
+        }
+        float:left;
+        width:218px;
+        height:184px;
+        border-right:1px solid #dbdbdb;
+        padding-left:20px;
+        li{
+            background:url(../img/dot.gif) no-repeat 10px 8px;
+            padding-left:34px;
+            margin-bottom:10px;
+        }
+    }
+    .ul_04{
+        p{
+            background:url(../img/helpcenter.gif) no-repeat 0 2px;
+        }
+    }
+    .ul_05{
+        p{
+            background:url(../img/helpcenter.gif) no-repeat 0 -113px;
+        }
+    }
+    .ul_06{
+        p{
+           background:url(../img/SpecialServies.png) no-repeat 0 2px;
+       }
+    }
+    .ul_07{
+        p{
+            background:url(../img/helpcenter.gif) no-repeat 0 -152px;
+        }
+    }
+    .ul_08{
+        p{
+            background:url(../img/helpcenter.gif) no-repeat 0 -190px;
+        }
+        border-right:0;
+    }
+}
+.police{
+    width:1200px;
+    margin:0 auto;
+    margin-bottom:14px;
+    .pol_01{
+        width:650px;
+        margin:0 auto;
+        text-align:center;
+        overflow:hidden;
+        li{
+            float:left;
+            a{
+                display:inline-block;
+                width:130px;
+                height:45px;
+            }
+        }
+        li:nth-of-type(1){
+            a{
+                background:url(../img/certi20150925.png) no-repeat ;
+            }
+        }
+        li:nth-of-type(2){
+            a{
+                background:url(../img/certi20150925.png) no-repeat 0 -92px;
+            }
+        }
+        li:nth-of-type(3){
+            a{
+                background:url(../img/certi20150925.png) no-repeat 0 -276px;
+            }
+        }
+        li:nth-of-type(4){
+            a{
+                background:url(../img/certi20150925.png) no-repeat 0 -326px;
+            }
+        }
+        li:nth-of-type(5){
+            a{
+                background:url(../img/certi20150925.png) no-repeat 0 -376px;
+            }
+        }
+    }
+    .pol_02{
+        width:340px;
+        margin:14px auto 0;
+        clear:both;
+        overflow:hidden;
+        span{
+                float:left;
+                font-family: tahoma,宋体;
+                font-size: 12px;
+                line-height: 1.5;
+                color: #484848;}
+        li{
+            float:left;
+            margin-right:12px;
+            a{
+                font-family: tahoma,宋体;
+                font-size: 12px;
+                line-height: 1.5;
+                color: #484848;
+            }
+        }
+        li:nth-of-type(4){
+            margin-right:0;
+        }
+    }
+    .pol_03{
+        width:410px;
+        margin:16px auto 42px;
+        overflow:hidden;
+        li{
+            float:left;
+            margin-right:8px;
         }
     }
 }
