@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style type="text/css">
+        *{margin:0;padding:0;}
+        li{list-style:none;}
+        i{font-style:normal;}
+        a{text-decoration:none;}
+        body{font-size:12px;font-family: tahoma,'宋体';}
+        #box{
+        	display: inline-block;
+			width: 86px;
+			height: 24px;
+			line-height: 24px;
+			text-align: center;
+			font-size: 16px;
+			border: 1px solid #ccc;
+			margin-left: 20px;
+			letter-spacing: 8px;
+			cursor: pointer;
+			font-style: italic;
+		}
+		
+        #topcon{width:100%;background:#f1f1f1;}
+        .top{background:#f1f1f1;width:960px;height:24px;border-bottom:1px solid #e2e2e2;margin:0 auto;}
+        .top ul li{float:left;padding-right:11px;line-height:24px;}
+        .top .left{float:left;padding-left:17px;}
+        .top .right{float:right;padding-right:11px;}
+        .top ul a{color:#666;text-decoration:none;font-size:12px;}
+        .top .left li:nth-of-type(1){background:url(../img/1.png) -2px 6px no-repeat;}
+        .top .left li a{margin-left:14px;}
+        .top .left li:nth-of-type(2){background:url(../img/1.png) 0px -39px no-repeat;}
+        .top .left li:nth-of-type(3){background:url(../img/1.png) 0px -86px no-repeat;}
+        .top .right li:first-child{color:#484848;font-size:12px;line-height:24px;}
+        .top .right li:nth-of-type(3){position:relative;}
+        .top .right li:nth-of-type(3) i{display: inline-block;width:7px;height:4px;line-height:24px;background:url(../img/2.png) 0px -27px no-repeat;}
+        .top .right li:nth-of-type(3)>a{padding-left:10px;padding-right:0;}
+        .top .right .phone{width:116px;height:128px;position:absolute;left:-59px;display:none;padding:3px 10px 6px;background:#fff;box-shadow: 2px 2px 5px rgba(0,0,0,0.2);}
+        .top .right .phone p:nth-of-type(1){font-size:14px;color:#fe7b23;font-weight:bold;}
+        .top .right .phone a{color:#fff;}
+        .top .right .phone p:nth-of-type(2){font-weight:bold;}
+        .top .right .phone i:nth-of-type(1){width:56px;height:25px;background:#4f9ee7;text-align:center;line-height:25px;float:left;margin-right:4px;}
+        .top .right .phone i:nth-of-type(2){width:56px;height:25px;background:#4f9ee7;text-align:center;line-height:25px;float:left;}
+        .top .right .phone i:nth-of-type(3){width:118px;height:25px;background:#f60;text-align:center;line-height:25px;margin-top:4px;}
+        .logo{width:960px;margin:0 auto;padding-top:20px;padding-bottom:23px;overflow:hidden;}
+        .logo a{display:inline;width:319px;height:65px;background:url(../img/logo.png) no-repeat;float:left;margin-right:26px;}
+        .logo h2{border-left:1px solid #d9d9d9;height:49px;line-height:49px;font-size:24px;padding-left:26px;float:left;font-weight:normal;}
+        #navcon{width:100%;background:#f9f9f9;}
+        .nav{width: 960px;height:491px;margin:0 auto;background:#f9f9f9;overflow:hidden;}
+        .nav .news{width:960px;height:30px;}
+        .nav .new_enter{height:30px;float:right;line-height:30px;font-size:12px;}
+        .nav .new_enter i{margin-left:5px;}
+        .nav .new_enter a{color:#fe0000;}
+        .nav .flow{width:655px;height:30px;margin:0 auto;background:url(../img/3.png) no-repeat;margin-top:20px;}
+        .nav .register{margin-top:40px;padding-left:322px;}
+        .nav .register_02{display: none;}
+        .nav .register i{display: inline-block;width:66px;height:52px;text-align:center;font-size:12px;}
+        .nav .register .iphone_1 span{display:none;color:#f4a60e;}
+        .register_01 .iphone_2 b{display: none;}
+        .nav .register .iphone_2 span{display:none;color:#f4a60e;}
+        .nav .register .iphone_2 strong{margin-left: 6px;cursor: pointer;}
+        .nav .register .iphone_1 input{width:257px;height:32px;background:#f9f9f9;border:1px solid #cfcfcf;}
+        .nav .register .iphone_2 input{width:132px;height:32px;background:#f9f9f9;border:1px solid #cfcfcf;margin-bottom:25px;}
+        .nav .register p input{width:257px;height:32px;background:#f9f9f9;border:1px solid #cfcfcf;}
+        .nav p button{width: 250px;height: 32px;border: 1px solid #868686;cursor: pointer;background: #E1E1E1;margin: 20px 0 0 400px;clear: both;}
+        .nav .register_02 .iphone_2 input{display: none;width: 257px;}
+        .nav .btn{width:100%;height:34px;margin-left:394px;}
+        .nav .btn input{width:257px;height:32px;background:#e1e1e1;border:1px solid #868686;}
+        .foot{width:100%;height:150px;margin-top:55px;text-align:center;}
+        .foot .ul_1{margin:0 auto;overflow:hidden;width:496px;}
+        .foot .ul_1 li{float:left;margin-right:4px;}
+        .foot ul li{float:left;}
+        .foot ul li a{display:block;float:left;}
+        .foot .ul_1 li:nth-of-type(1) a{width:116px;height:45px;background:url(../img/4.png) 0 -92px no-repeat;}
+        .foot .ul_1 li:nth-of-type(2) a{width:130px;height:45px;background:url(../img/4.png) 0 -276px no-repeat;}
+        .foot .ul_1 li:nth-of-type(3) a{width:127px;height:45px;background:url(../img/4.png) 0 -326px no-repeat;}
+        .foot .ul_1 li:nth-of-type(4) a{width:106px;height:45px;background:url(../img/4.png) 0 -376px no-repeat;}
+        .foot .ul_2{margin:13px auto 15px;overflow:hidden;width:348px;;}
+        .foot .ul_2 li{margin-right:12px;}
+        .foot .ul_2 a{color:#484848;}
+        .foot p{margin:0 auto;}
+        .register_002{display: none;}
+        .read span{color:#f60;display: inline !important;}
+        #check{width: 13px;height: 13px;}
+        .register_03{display: none;}
+        .register_03 p{font-size: 20px;}
+    </style>
+    <script src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../js/jquery.cookie.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $(".top .left li a").each(function(){
+                $(this).mouseover(function(){
+                    $(this).css({"text-decoration":"underline"});
+                });
+                $(this).mouseout(function(){
+                    $(this).css({"text-decoration":"none"});
+                });
+            })
+            //top的a的下划线
+            $(".top .right li:nth-of-type(2)").mouseover(function(){
+                $(this).css({"text-decoration":"underline"});
+            })
+            $(".top .right li:nth-of-type(2)").mouseout(function(){
+                $(this).css({"text-decoration":"none"});
+            })
+            //top中客服服务功能
+            $(".top .right li:nth-of-type(3)").mouseover(function(){
+                $(".top .right li:nth-of-type(3)>i").css({"background":"url(img/2.png) -10px -27px no-repeat","transtion":"0.5"});
+                $(this).css({"background":"#fff"});
+                $(".top .right .phone").css({"display":"block"});
+            })
+            $(".top .right li:nth-of-type(3)").mouseout(function(){
+                $(".top .right li:nth-of-type(3)>i").css({"background":"url(img/2.png) 0 -27px no-repeat"});
+                $(this).css({"background":"#f1f1f1"});
+                $(".top .right .phone").css({"display":"none"});
+            })
+            //登录按钮的下划线
+            $(".nav .news a").mouseover(function(){
+                $(this).css({"text-decoration":"underline"});
+            })
+            $(".nav .news a").mouseout(function(){
+                $(this).css({"text-decoration":"none"});
+            })
+            //foot的a标签的下换线
+            $(".foot .ul_2 a").mouseover(function(){
+                $(this).css({"text-decoration":"underline"});
+            })
+            $(".foot .ul_2 a").mouseout(function(){
+                $(this).css({"text-decoration":"none"});
+            })
+            var oBox = document.getElementById("box");
+            var oPox = document.getElementById("pox");
+			var arr = "0123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM";
+			var str = arr[Math.floor(Math.random() * 62)] + arr[Math.floor(Math.random() * 62)] + arr[Math.floor(Math.random() * 62)] + arr[Math.floor(Math.random() * 62)];
+				oBox.innerHTML = str;
+			oBox.onclick = function(){
+				var str = arr[Math.floor(Math.random() * 62)] + arr[Math.floor(Math.random() * 62)] + arr[Math.floor(Math.random() * 62)] + arr[Math.floor(Math.random() * 62)];
+				oBox.innerHTML = str;
+			}
+			oPox.onclick = function(){
+				var str = arr[Math.floor(Math.random() * 62)] + arr[Math.floor(Math.random() * 62)] + arr[Math.floor(Math.random() * 62)] + arr[Math.floor(Math.random() * 62)];
+				oBox.innerHTML = str;
+			}
+			$(".register input").focus(function(){
+				$(this).css("border-color","#f60");
+				
+			})
+			$(".register input").blur(function(){
+				$(".register input").css("border-color","#cfcfcf");
+//				if($(".register input").eq(0).val() == ""){
+//					$(".register span").css("display","inline")
+//				}
+				var re = /^1[3|4|5|7|8][0-9]{9}$/;
+				//console.log(re.test($(".register input").eq(0).val()));
+				if(re.test($(".register input").eq(0).val()) == false || $(".register input").eq(0).val() == ""){
+					$(".register span").css("display","inline");
+					boo = false;
+				}else{
+					$(".register span").css("display","none");
+					boo = true;
+				}
+			})
+			$(".register_001").click(function(){
+				//console.log($("#box").html());
+				//console.log($(".register input").eq(1).val());
+				if($(".register_01 input").eq(1).val() == $("#box").html()){
+					$(".nav .register_02").css("display","block");
+					$(".register_01").css("display","none");
+					$(".flow").css("background-position","0");
+//					$(".register").css("display","none");
+					$(".register_02").css("display","block");
+					$(".nav .register_02 .iphone_2 input").css("display","inline");
+					$("p .register_003").css("display","none");
+					$("p .register_002").css("display","block");
+				}else{
+					$(".register_01 .iphone_2 b").css({"display":"inline","color":"#f60"})
+				}
+				
+			})
+			$('.register_002').attr('disabled',"false");
+			
+			$("#check").click(function(){
+				//console.log(document.getElementById("check").checked);
+				if(document.getElementById("check").checked){
+					$('.register_002').removeAttr("disabled");
+				}else{
+					$('.register_002').attr('disabled',"false");
+				}
+			})
+			
+			$(".register_002").click(function(){
+				if($(".register_02 input").eq(0).val() == $(".register_02 input").eq(1).val()){
+					if($(".register_02 input").eq(0).val() == ""){
+						$(".register_02 .iphone_2 span").css("display","inline");
+					}else{
+						$(".register_02").css("display","none");
+						$(".register_03").css("display","block");
+						$("p .register_002").css("display","none");
+						$(".flow").css("background-position","0 -150px");
+		var usn = $(".register input").eq(0).val();
+		var pwd = $(".register_02 input").eq(1).val();
+		
+		//检测一下用户是否已经存在
+		//假设："test1,123:test2,abc:test3,888"
+		/*转为对象
+		 * {
+		 * 	test1:123,
+		 *  test2:abc,
+		 *  test3:888
+		 * }
+		 */
+		
+		//获取cookie中的用户信息
+		var users = $.cookie("registerUsers") ? $.cookie("registerUsers") : "";
+		
+		//将字符串转为对象
+		users = convertStrToObj(users);
+		if(usn in users){ //判断usn属性是否在users对象中。
+			alert("用户名已经被注册");
+			return;
+		}else{
+			//注册成功，设置用户信息的cookie
+			//test1 123  test2 abc  test3 888
+			//"test1,123:test2,abc:test3,888"设置cookie的value值
+			//registerUsers 设置cookie的name(key)值
+			//将用户添加到已注册用户列表对象中
+			users[usn] = pwd;
+			//假设users[李涛] = 123
+			
+			
+			//将用户信息对象转化回字符串，以便于设置cookie
+			userStr = convertObjToStr(users);
+			//设置用户信息cookie
+			$.cookie("registerUsers",userStr,{expires:7,path:"/"});
+			console.log(decodeURIComponent(document.cookie))
+			alert("注册成功！");
+		}
+					}
+					
+				}else{
+					$(".register_02 .iphone_2 span").css("display","inline");
+				}
+			})
+			
+        })
+        function convertStrToObj(str){
+	if(!str){ //如果是空字符串
+		return {}; //返回空对象
+	}
+	var users = str.split(":");
+	var obj = {};
+	for(var i = 0; i < users.length; i ++){
+		var userData = users[i].split(",");
+		obj[userData[0]] = userData[1];
+	}
+	return obj;
+}
+
+//将对象转为字符串
+function convertObjToStr(obj){
+	var str = "";
+	//遍历对象
+	for(var usn in obj){
+		var pwd = obj[usn];
+		if(str){
+			str += ":";
+		}
+		str += usn + ',' + pwd;
+	}
+	return str;
+}
+    </script>
+</head>
+<body>
+<div id="topcon">
+    <div class="top">
+        <ul class="left">
+            <li><a href="###" title="">掌上新蛋</a></li>
+            <li><a href="###" title="">企业客户</a></li>
+            <li><a href="###" title="">入住开放平台</a></li>
+        </ul>
+        <ul class="right">
+            <li>欢迎来新蛋购物！</li>
+            <li><a href="###" title="">帮助中心</a></li>
+            <li><a href="###" title="">客户服务</a><i></i>
+            <div class="phone">
+                <p>400-820-4400</p>
+                <p>021-67072999</p>
+                <p>每天 9:00 - 18:00</p>
+                <i><a href="">在线咨询</a></i><i><a href="">邮件我们</a></i>
+                <i><a href="">预约来电</a></i>
+            </div></li>
+        </ul>
+    </div>
+</div>
+    <div class="logo">
+        <a href="index.html"></a>
+        <h2>新用户注册</h2>
+    </div>
+<div id="navcon">
+    <div class="nav">
+        <div class="news"><div class="new_enter">已是新蛋会员<i>现在<a href="login.html">登录</a></i></div></div>
+        <div class="flow"></div>
+        <div class="register_01 register">
+            <div class="iphone_1"><i>手 机 号 码</i> : <input type="text" id="username"/><span>请输入正确的手机号</span></div>
+            <div class="iphone_2"><i>图形验证码</i> : <input type="text" /><div id="box"></div><strong id="pox">看不清，换一张</strong><b>验证码输入错误</b></div>
+        </div>
+        <div class="register_02 register">
+            <div class="iphone_1"><i>登录密码</i> : <input type="password" id="username"/></div>
+            <div class="iphone_2"><i>确认密码</i> : <input type="password" /><span>请输入正确的密码</span></div>
+            <p class="read"><input type="checkbox" name="check" id="check" value="" checked="checked"/><label for="check">我已阅读<span>《新蛋用户注册协议》</span></label></p>
+        </div>
+        <div class="register_03 register">
+            <p>恭喜您，成功注册中国新蛋网</p>
+        </div>
+        <p><button class="register_001 register_003">注册</button></p>
+        <p><button class="register_001 register_002">注册</button></p>
+    </div>
+</div>
+    <div class="foot">
+        <ul class="ul_1">
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+        </ul>
+        <ul class="ul_2">
+            <li>新蛋集团网站：</li>
+            <li><a href="">美国新蛋</a></li>
+            <li><a href="">中国新蛋</a></li>
+            <li><a href="">加拿大新蛋</a></li>
+            <li><a href="">新蛋软件</a></li>
+        </ul>
+        <p>© 2001-2017 新蛋商贸（上海）有限公司 版权所有 沪ICP备:16033615</p>
+    </div>
+</body>
+</html>

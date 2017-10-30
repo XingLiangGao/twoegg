@@ -13,11 +13,13 @@
     position:fixed;
     right:30px;
     bottom:50px;
-    a{
+    //transition: 0.5s;
+    span{
         display:inline-block;
         width:100%;
         height:100%;
         background:url(../img/toTop.gif) no-repeat;
+        //transition: 0.5s;
     }
 }
 #topcon{
@@ -280,10 +282,14 @@
                         line-height:27px;
                         position:absolute;
                         padding-left:20px;
-                        width:100%;
+                        width:156px;
                         left:0px;
                         padding-top:6px;
+                        &:hover{
+                            background: #fff !important; 
+                        } 
                     }
+                    
                     >div:nth-of-type(1){
                         top:30px;
                     }
@@ -308,8 +314,9 @@
         li{
             float:left;
             padding: 0 20px;
-            height:40px;
+            height:40px; 
             line-height:40px;
+            transition: 0.5s;
             a{
                 color:#fff;
                 font: 14px/40px microsoft yahei;
@@ -424,7 +431,7 @@
             }
         }
     }
-    /* 隐藏的二级菜单 */
+    /* 隐藏的san级菜单 */
     .three{
         position:absolute;
         z-index: 666;
@@ -1531,6 +1538,7 @@
         height:100%;
         position:relative;
         float:left;
+        ul{overflow: hidden;}
         .tab_01{
             li{
                 width:238px;
@@ -1557,7 +1565,7 @@
             display:block;
             width: 938px;
             height:240px;
-            padding: 30px 10px 0;
+            padding: 0 10px;
             border-right:1px solid #d9d9d9;
             li{
                 width:163px;
@@ -1583,12 +1591,12 @@
             display:none;
             width: 938px;
             height:240px;
-            padding: 30px 10px 0;
+            padding: 0 10px;
             border-right:1px solid #d9d9d9;
             position:absolute;
-            top:0;
+            top:30px;
             li{
-                width:none;
+                width:163px;
                 height:186px;
                 float:left;
                 margin:32px 12px;
@@ -1610,10 +1618,10 @@
             display:none;
             width: 938px;
             height:240px;
-            padding: 30px 10px 0;
+            padding: 0 10px;
             border-right:1px solid #d9d9d9;
             position:absolute;
-            top:0;
+            top:30px;
             li{
                 width:163px;
                 height:186px;
@@ -1637,10 +1645,11 @@
             display:none;
             width: 938px;
             height:240px;
-            padding: 30px 10px 0;
+            padding: 0 10px;
             border-right:1px solid #d9d9d9;
             position:absolute;
-            top:0;
+            top:30px;
+            
             li{
                 width:163px;
                 height:186px;
@@ -1836,6 +1845,8 @@
         border:1px solid #d9d9d9;
         position:relative;
         .repe_top{
+            width: 228px;
+            height: 408px;
             h3{
                 height:32px;
                 line-height:32px;
@@ -1849,7 +1860,13 @@
                     background:#e9e9e9;
                     color:#999999;
                     line-height:28px;
-                    margin: 0 2px;
+                    margin: 3px 2px 0;
+                }
+                a:nth-of-type(2){
+                    background: #fff;
+                    color: #f60;
+                    border:1px solid #e9e9e9;
+                    border-bottom: 1px solid #fff;
                 }
             }
             .watch{
@@ -1871,12 +1888,16 @@
                     }
 
                 }
+                li:nth-of-type(4){
+                    border-bottom: 0;
+                }
             }
             /* 重复中的右面的隐藏列表 */
             .milk{
                 position:absolute;
-                right:34px;
+                left: 0;
                 top:32px;
+                width: 100%;
                 display:none;
                 li{
                     border-bottom:1px solid #d9d9d9;
@@ -1896,9 +1917,17 @@
                     }
 
                 }
+                li:nth-of-type(4){
+                    border-bottom: 0;
+                }
             }
         }
-        >img{margin-top:10px;}
+        >img{
+            margin-top:10px;
+            position: absolute;
+            bottom:-110px;
+            left: 0;
+            }
     }
 }
 .repetition_01{
@@ -2069,6 +2098,8 @@
         border:1px solid #d9d9d9;
         position:relative;
         .repe_top{
+            width: 228px;
+            height: 408px;
             h3{
                 height:32px;
                 line-height:32px;
@@ -2082,7 +2113,14 @@
                     background:#e9e9e9;
                     color:#999999;
                     line-height:28px;
-                    margin: 0 2px;
+                    margin: 3px 2px 0;
+                    text-decoration: none;
+                }
+                a:nth-of-type(2){
+                    background: #fff;
+                    color: #f60;
+                    border:1px solid #e9e9e9;
+                    border-bottom: 1px solid #fff;
                 }
             }
             .watch{
@@ -2104,12 +2142,16 @@
                     }
 
                 }
+                li:nth-of-type(4){
+                    border-bottom: 0;
+                }
             }
             /* 重复中的右面的隐藏列表 */
             .milk{
                 position:absolute;
-                right:34px;
+                left: 0;
                 top:32px;
+                width: 100%;
                 display:none;
                 li{
                     border-bottom:1px solid #d9d9d9;
@@ -2129,9 +2171,17 @@
                     }
 
                 }
+                li:nth-of-type(4){
+                    border-bottom: 0;
+                }
             }
         }
-        >img{margin-top:10px;}
+        >img{
+            margin-top:10px;
+            position: absolute;
+            bottom:-110px;
+            left: 0;
+            }
     }
 }
 .repetition_02{
@@ -2302,6 +2352,8 @@
         border:1px solid #d9d9d9;
         position:relative;
         .repe_top{
+            width: 228px;
+            height: 408px;
             h3{
                 height:32px;
                 line-height:32px;
@@ -2315,7 +2367,13 @@
                     background:#e9e9e9;
                     color:#999999;
                     line-height:28px;
-                    margin: 0 2px;
+                    margin: 3px 2px 0;
+                }
+                a:nth-of-type(2){
+                    background: #fff;
+                    color: #f60;
+                    border:1px solid #e9e9e9;
+                    border-bottom: 1px solid #fff;
                 }
             }
             .watch{
@@ -2337,12 +2395,16 @@
                     }
 
                 }
+                li:nth-of-type(4){
+                    border-bottom: 0;
+                }
             }
             /* 重复中的右面的隐藏列表 */
             .milk{
                 position:absolute;
-                right:34px;
+                left: 0;
                 top:32px;
+                width: 100%;
                 display:none;
                 li{
                     border-bottom:1px solid #d9d9d9;
@@ -2362,9 +2424,17 @@
                     }
 
                 }
+                li:nth-of-type(4){
+                    border-bottom: 0;
+                }
             }
         }
-        >img{margin-top:10px;}
+        >img{
+            margin-top:10px;
+            position: absolute;
+            bottom:-110px;
+            left: 0;
+            }
     }
 }
 .repetition_03{
@@ -2535,6 +2605,8 @@
         border:1px solid #d9d9d9;
         position:relative;
         .repe_top{
+            width: 228px;
+            height: 408px;
             h3{
                 height:32px;
                 line-height:32px;
@@ -2548,7 +2620,13 @@
                     background:#e9e9e9;
                     color:#999999;
                     line-height:28px;
-                    margin: 0 2px;
+                    margin: 3px 2px 0;
+                }
+                a:nth-of-type(2){
+                    background: #fff;
+                    color: #f60;
+                    border:1px solid #e9e9e9;
+                    border-bottom: 1px solid #fff;
                 }
             }
             .watch{
@@ -2570,12 +2648,16 @@
                     }
 
                 }
+                li:nth-of-type(4){
+                    border-bottom: 0;
+                }
             }
             /* 重复中的右面的隐藏列表 */
             .milk{
                 position:absolute;
-                right:34px;
+                left: 0;
                 top:32px;
+                width: 100%;
                 display:none;
                 li{
                     border-bottom:1px solid #d9d9d9;
@@ -2595,9 +2677,17 @@
                     }
 
                 }
+                li:nth-of-type(4){
+                    border-bottom: 0;
+                }
             }
         }
-        >img{margin-top:10px;}
+        >img{
+            margin-top:10px;
+            position: absolute;
+            bottom:-110px;
+            left: 0;
+            }
     }
 }
 .repetition_04{
@@ -2768,6 +2858,8 @@
         border:1px solid #d9d9d9;
         position:relative;
         .repe_top{
+            width: 228px;
+            height: 408px;
             h3{
                 height:32px;
                 line-height:32px;
@@ -2781,7 +2873,13 @@
                     background:#e9e9e9;
                     color:#999999;
                     line-height:28px;
-                    margin: 0 2px;
+                    margin: 3px 2px 0;
+                }
+                a:nth-of-type(2){
+                    background: #fff;
+                    color: #f60;
+                    border:1px solid #e9e9e9;
+                    border-bottom: 1px solid #fff;
                 }
             }
             .watch{
@@ -2803,12 +2901,16 @@
                     }
 
                 }
+                li:nth-of-type(4){
+                    border-bottom: 0;
+                }
             }
             /* 重复中的右面的隐藏列表 */
             .milk{
                 position:absolute;
-                right:34px;
+                left: 0;
                 top:32px;
+                width: 100%;
                 display:none;
                 li{
                     border-bottom:1px solid #d9d9d9;
@@ -2828,9 +2930,17 @@
                     }
 
                 }
+                li:nth-of-type(4){
+                    border-bottom: 0;
+                }
             }
         }
-        >img{margin-top:10px;}
+        >img{
+            margin-top:10px;
+            position: absolute;
+            bottom:-110px;
+            left: 0;
+            }
     }
 }
 .brand{

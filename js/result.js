@@ -1,12 +1,10 @@
-/*
-* @Author: Marte
-* @Date:   2017-10-26 08:29:51
-* @Last Modified by:   Marte
-* @Last Modified time: 2017-10-27 10:30:48
-*/
 define(function(){
-    function menue(){
-    	//滑入二级菜单时的效果
+    function list(){
+    	$(".shop").hover(function(){
+    		$(".navcon .shop .menue").css("display","block");
+    	},function(){
+    		$(".navcon .shop .menue").css("display","none");
+    	})
         $(".navcon .shop .menue ul li").mouseover(function(){
             $that = $(this).index();
             //li的颜色变色
@@ -22,6 +20,8 @@ define(function(){
                 $(".navcon .three").eq($that).mouseover(function(){
                 	//三级菜单不消失
                     $(this).css({"display":"block"});
+                    //二级菜单不消失
+                    $(".navcon .shop .menue").css("display","block");
                     //当前li的颜色变色
                     $(".navcon .shop .menue ul li").css({"background":"#f7f7f7"});
                     $(".navcon .shop .menue ul li").eq($that).css({"background":"#fff"});
@@ -33,6 +33,8 @@ define(function(){
                     $(this).css({"display":"none"});
                     //二级菜单颜色变白
                     $(".navcon .shop .menue ul li").css({"background":"#fff"});
+                    //二级菜单消失
+                    $(".navcon .shop .menue").css("display","none");
                     //二级菜单下的div变白
                     $(".navcon .shop .menue ul .list_05 .list_bot").css({"background":"#fff"});
                     //二级菜单消失
@@ -50,6 +52,8 @@ define(function(){
 			$(".navcon .shop .menue ul .list_05 .list_bot").css({"background":"#fff"});
             //三级菜单消失
             $(".navcon .three").css({"display":"none"});
+            //二级菜单消失
+            //$(".navcon .shop .menue").css("display","none");
         })
         //移入二级菜单下的div
         $(".navcon .shop .menue ul .list_05 div").mouseover(function(){
@@ -68,6 +72,8 @@ define(function(){
             $(".navcon .three").eq($that + 2).mouseover(function(){
             	//三级菜单不消失
                 $(this).css({"display":"block"});
+                //二级菜单不消失
+                $(".navcon .shop .menue").css("display","block");
                 //二级菜单变色
                 $(".navcon .shop .menue ul li").css({"background":"#f7f7f7"});
                 $(".navcon .shop .menue ul .list_05 div").css({"background":"#f7f7f7"});
@@ -78,6 +84,8 @@ define(function(){
             $(".navcon .three").eq($that + 2).mouseout(function(){
             	//三级菜单消失
                 $(this).css({"display":"none"});
+                //二级菜单消失
+                $(".navcon .shop .menue").css("display","none");
                 //$(".navcon .shop .menue ul .list_05 div").css({"background":"#fff"});
                 $(".navcon .shop .menue ul li").css({"background":"#fff"});
                 $(".navcon .shop .menue ul .list_05 div").css({"background":"#fff"});
@@ -102,86 +110,66 @@ define(function(){
             	$(".navcon .list_05 div").eq(4).css({"background":"#fff"});
             })
         })
-        
-        /*$(".navcon .shop .menue ul .list_05 .list_bot").mouseout(function(){
-            $that = $(this).index();
-            $(this).css({"background":"#f7f7f7"});
-            $(".navcon .shop .menue ul li").css({"background":"#fff"});
-            $(".navcon .shop .menue ul .list_05").css({"background":"#fff"});
-            $(".navcon .three").eq($that + 2).css({"display":"none"})
-        })
-        $(".navcon .shop .menue ul .list_05").mouseout(function(){
-            $(this).css({"background":"#fff"});
-        });*/
-       //手风琴
-       /*$(".accordion div").hover(function(){
-       	$that = $(this).index();
-       	$(this).css({"width":"148"});
-       	$(this).eq($that).css({"width":""});
-       })*/
-      //tab
-      $(".tab .tab_left .tab_01 li").hover(function(){
-      	$that = $(this).index();
-      	$(".tab .tab_left .tab_01 li").css({"background":"#f6f6f6","color":"#666","cursor": "pointer"});
-      	$(".tab .tab_left .tab_01 li").eq($that).css({"background":"#fff","color":"#f60","border-bottom":"0"});
-      	$(".tab .tab_left ul").css("display","none");
-      	$(".tab .tab_left ul").eq(0).css("display","block");
-      	$(".tab .tab_left ul").eq($that + 1).css("display","block");
-      })
-      //热销榜
-      $(".repetition .repe_right .repe_top h3 a").hover(function(){
-      	$that = $(this).index();
-      	//console.log( $(this))
-      	
-      	$(".repetition .repe_right .repe_top h3 a").css({"background":"#e9e9e9","color":"999","border":"0"});
-      	
-      	$(".repetition .repe_right .repe_top h3 a").eq($that).css({"background":"#fff","color":"#f60","border":"1px solid #e9e9e9","border-bottom":"1px solid #fff","cursor":"pointer","text-decoration":"none"});
-      	
-      	$(".repetition .repe_right .repe_top ul").css("display","none");
-      	$(".repetition .repe_right .repe_top ul").eq($that).css("display","block");
-      })
-    }
-    function banner02(){
-        $(".banner_02 strong").eq(0).click(function(){
-            $(".banner_02 .list_top").css({"display":"none;"})
-            $(".banner_02 .list_bottom").css({"display":"block"})
-        })
-        $(".banner_02 strong").eq(1).click(function(){
-            $(".banner_02 .list_top").css({"display":"block;"})
-            $(".banner_02 .list_bottom").css({"display":"none"})
-        })
+        /*$(".product .product_con .pro_left .pro_le01 p").eq(0).click(function(){
+        	$(".product .product_con .pro_left .pro_le01 ul").eq(0).css("display","none");
+        })*/
         var onff = true;
-        setInterval(function(){
-            if(onff){
-                $(".banner_02 .list_top").css({"display":"none"})
-                $(".banner_02 .list_bottom").css({"display":"block"})
-            }
-            if(!onff){
-                $(".banner_02 .list_top").css({"display":"block"})
-                $(".banner_02 .list_bottom").css({"display":"none"})
-            }
-            onff = !onff;
-        },2000)
-    }
-    function rebatch(){
-        $(".banner h2 a").mouseover(function(){
-            $(this).css({"cursor":"pointer","text-decoration":"underline"});
-        })
-        $(".banner h2 a").mouseout(function(){
-            $(this).css({"cursor":"default","text-decoration":"none"});
-        })
-        var onff = true;
-        $(".banner h2 a").click(function(){
-            if(onff){
-                $(".banner .hot ul").eq(0).css({"display":"none"});
-                $(".banner .hot ul").eq(1).css({"display":"block"});
-            }
-            if(!onff){
-                $(".banner .hot ul").eq(1).css({"display":"none"});
-                $(".banner .hot ul").eq(0).css({"display":"block"});
-            }
-            onff = !onff;
-        })
+		$(".product .product_con .pro_left .pro_le01 p").click(function(){
+			$that = $(this).index();
+			switch($that){
+				case 0 : $that = 0;break;
+				case 2 : $that = 1;break;
+				case 4 : $that = 2;break;
+			}
+			var aa = $(".product .product_con .pro_left .pro_le01 ul").eq($that);
+			var bb = aa.children().length * aa.children().innerHeight();
+			var ii= $(".product .product_con .pro_left .pro_le01 p").eq($that).children()[0];
+//			console.log(bb)
+			
+			$(".product .product_con .pro_left .pro_le01 ul").each(function(){
+				$(this).animate({
+					height : 0
+				},200)
+			})
+			//console.log($(".product .product_con .pro_left .pro_le01 p").children()[0])
+			if(aa.innerHeight()){
+				aa.animate({
+					height : 0
+				},100)
+				$(ii).css("background-position","2px -46px")
+			}else{
+				aa.animate({
+					height: bb
+				},100)
+				$(ii).css("background-position","-1px -81px")
+//				$(".product .product_con .pro_left .pro_le01 ul").css("background-position","-1px -81px")
+			}
+//			console.log((".product .product_con .pro_left .pro_le01 ul").css("display"))
+//			$(".product .product_con .pro_left .pro_le01 ul").each(function(){
+//				console.log($(".product .product_con .pro_left .pro_le01 ul").eq($that).css("display"));
+//				if($(this).css("display") == "block"){
+//					$(this).css("display","none")
+//				}
+//			})
+//			if($(".product .product_con .pro_left .pro_le01 ul").eq($that).css("display") ==  "block"){
+//				$(".product .product_con .pro_left .pro_le01 ul").eq($that).css("display","none");
+//			}
+//			$(".product .product_con .pro_left .pro_le01 ul").eq($that).css("display","block");
+
+		})
+		$(".product .product_con .pro_left .pro_le02 ul:nth-of-type(2)").css("height","0");
+		$(".product .product_con .pro_left .pro_le02 > a:nth-of-type(1)").mouseover(function(){
+			$(".product .product_con .pro_left .pro_le02 ul:nth-of-type(2)").css("height","0");
+			$(".product .product_con .pro_left .pro_le02 ul:nth-of-type(1)").css("height","");
+			$(".product .product_con .pro_left .pro_le02 > a:nth-of-type(2)").css({"background":"#dbdbdb"});
+			$(".product .product_con .pro_left .pro_le02 > a:nth-of-type(1)").css({"background":"#fff"});
+		})
+		$(".product .product_con .pro_left .pro_le02 > a:nth-of-type(2)").mouseover(function(){
+			$(".product .product_con .pro_left .pro_le02 ul:nth-of-type(2)").css("height","");
+			$(".product .product_con .pro_left .pro_le02 ul:nth-of-type(1)").css("height","0");
+			$(".product .product_con .pro_left .pro_le02 > a:nth-of-type(2)").css({"background":"#fff"});
+			$(".product .product_con .pro_left .pro_le02 > a:nth-of-type(1)").css({"background":"#dbdbdb"});
+		})
     }
     function collect(){
         $(".navcon .nav_right a").eq(0).mouseover(function(){
@@ -241,27 +229,8 @@ define(function(){
             $(".navcon .nav_right a").eq(1).css({"background":"#f60","color":"#fff"});
         })
     }
-    function fixed(){
-        //var oTop = document.getElementById('top');
-        window.onscroll = function(){
-            var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-            if(scrollTop >= 300){
-                 $("#top").css("display","block")
-            }else{
-                $("#top").css("display","none")
-            }
-        }
-       $("#top").click(function(){
-       		$(document.documentElement).animate({
-       			scrollTop : 0
-       	})
-       })
-    }
     return {
-        menue : menue,
-        banner02 : banner02,
-        rebatch : rebatch,
-        collect : collect,
-        fixed : fixed
+        list : list,
+        collect : collect
     }
 })

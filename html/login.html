@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+        *{margin:0;padding:0;}
+        li{list-style:none;}
+        i{font-style:normal;}
+        a{text-decoration:none;}
+        body{font-size:12px;font-family: tahoma,'宋体';}
+        #box{
+        	display: inline-block;
+			width: 50px;
+			height: 24px;
+			line-height: 24px;
+			text-align: center;
+			font-size: 16px;
+			border: 1px solid #ccc;
+			margin-left: 20px;
+		}
+        #topcon{width:100%;background:#f1f1f1;}
+        .top{background:#f1f1f1;width:960px;height:24px;border-bottom:1px solid #e2e2e2;margin:0 auto;}
+        .top ul li{float:left;padding-right:11px;line-height:24px;}
+        .top .left{float:left;padding-left:17px;}
+        .top .right{float:right;padding-right:11px;}
+        .top ul a{color:#666;text-decoration:none;font-size:12px;}
+        .top .left li:nth-of-type(1){background:url(../img/1.png) -2px 6px no-repeat;}
+        .top .left li a{margin-left:14px;}
+        .top .left li:nth-of-type(2){background:url(../img/1.png) 0px -39px no-repeat;}
+        .top .left li:nth-of-type(3){background:url(../img/1.png) 0px -86px no-repeat;}
+        .top .right li:first-child{color:#484848;font-size:12px;line-height:24px;}
+        .top .right li:nth-of-type(3){position:relative;}
+        .top .right li:nth-of-type(3) i{display: inline-block;width:7px;height:4px;line-height:24px;background:url(../img/2.png) 0px -27px no-repeat;}
+        .top .right li:nth-of-type(3)>a{padding-left:10px;padding-right:0;}
+        .top .right .phone{width:116px;height:128px;position:absolute;left:-59px;display:none;padding:3px 10px 6px;background:#fff;box-shadow: 2px 2px 5px rgba(0,0,0,0.2);}
+        .top .right .phone p:nth-of-type(1){font-size:14px;color:#fe7b23;font-weight:bold;}
+        .top .right .phone a{color:#fff;}
+        .top .right .phone p:nth-of-type(2){font-weight:bold;}
+        .top .right .phone i:nth-of-type(1){width:56px;height:25px;background:#4f9ee7;text-align:center;line-height:25px;float:left;margin-right:4px;}
+        .top .right .phone i:nth-of-type(2){width:56px;height:25px;background:#4f9ee7;text-align:center;line-height:25px;float:left;}
+        .top .right .phone i:nth-of-type(3){width:118px;height:25px;background:#f60;text-align:center;line-height:25px;margin-top:4px;}
+        .logo{width:960px;margin:0 auto;padding-top:20px;padding-bottom:23px;overflow:hidden;}
+        .logo a{display:inline;width:319px;height:65px;background:url(../img/logo.png) no-repeat;float:left;margin-right:26px;}
+        .logo h2{border-left:1px solid #d9d9d9;height:49px;line-height:49px;font-size:24px;padding-left:26px;float:left;font-weight:normal;}
+        .foot{width:100%;height:150px;margin-top:55px;text-align:center;}
+        .foot .ul_1{margin:0 auto;overflow:hidden;width:496px;}
+        .foot .ul_1 li{float:left;margin-right:4px;}
+        .foot ul li{float:left;}
+        .foot ul li a{display:block;float:left;}
+        .foot .ul_1 li:nth-of-type(1) a{width:116px;height:45px;background:url(../img/4.png) 0 -92px no-repeat;}
+        .foot .ul_1 li:nth-of-type(2) a{width:130px;height:45px;background:url(../img/4.png) 0 -276px no-repeat;}
+        .foot .ul_1 li:nth-of-type(3) a{width:127px;height:45px;background:url(../img/4.png) 0 -326px no-repeat;}
+        .foot .ul_1 li:nth-of-type(4) a{width:106px;height:45px;background:url(../img/4.png) 0 -376px no-repeat;}
+        .foot .ul_2{margin:13px auto 15px;overflow:hidden;width:348px;;}
+        .foot .ul_2 li{margin-right:12px;}
+        .foot .ul_2 a{color:#484848;}
+        .foot p{margin:0 auto;}
+        #navcon{width:100%;background:#E3E3E3;padding: 44px 0px;}
+        .nav{width: 980px;height:399px;margin:0 auto;background:#f9f9f9;overflow:hidden;background: #E3E3E3;}
+        .nav_left{float: left;}
+        .nav_right{width: 312px;height:380px;border:1px solid #ccc;padding: 18px 24px 0;background: #fff;float: right;}
+        .nav_right h4{height: 21px;font-size: 18px;}
+        .nav_right h4 a{font-size: 12px;font-weight: none;}
+        .nav_right a{float: right;color:#003399;}
+        .nav_right p{overflow: hidden;margin-top:24px;margin-left: 12px;}
+        .nav_right i{display: inline-block;width: 30px;height: 33px;float: left;}
+        .nav_right p:nth-of-type(1) i{background: url(../img/login_icon.png) no-repeat;}
+        .nav_right p:nth-of-type(2) i{background: url(../img/login_icon.png) no-repeat 0 -59px;}
+        .nav_right p input{width: 250px;height: 31px;border:1px solid #B7B7B7;float:left;}
+        .nav_right p a{color:#003399;}
+        .nav_right p a:nth-of-type(1){float: left;}
+        .nav_right p a:nth-of-type(2){float: right;margin-right: 18px;}
+        .nav_right #enter{display: block;margin-top: 10px;width: 280px;height:32px;text-align: center;background: #f7661f;color: #fff;line-height: 32px;margin-left: 12px;cursor: pointer;}
+        .nav_right #enter:hover{background: #F3CE76;}
+        .nav_right .partner li{float: left;margin-right: 10px;color:#666,margin-top:9px;}
+        .nav_right .partner li a:hover{color: #f60;text-decoration: underline;}
+        .partner ul{overflow: hidden;}
+        .partner{overflow: hidden;}
+        .partner p{margin-left: 0;}
+        .nav_right .partner li a{color:#666;display: inline-block;height: 30px;line-height:30px;margin-right: 3px;margin-top: 4px;}
+        .partner li:nth-of-type(1) a{background: url(../img/4link.png) no-repeat ;padding-left: 33px;}
+        .partner li:nth-of-type(2) a{background: url(../img/4link.png) no-repeat 0 -45px ;padding-left: 33px;}
+        .partner li:nth-of-type(3) a{background: url(../img/4link.png) no-repeat 0 -97px ;padding-left: 33px;}
+        .partner li:nth-of-type(4) a{background: url(../img/4link.png) no-repeat 0 -161px; padding-left: 33px;}
+        .partner li:nth-of-type(5) a{background: url(../img/otherLoginIcon20140616.gif) no-repeat   1px -2576px; padding-left: 33px;}
+        .partner li:nth-of-type(6) a{background: url(../img/otherLoginIcon20140616.gif) no-repeat  3px -2609px; padding-left: 33px;}
+        .partner li:nth-of-type(7) a{background: url(../img/otherLoginIcon20140616.gif) no-repeat  3px -2508px; padding-left: 33px;}
+        .partner li:nth-of-type(8) a{background: url(../img/ptlogo.gif) no-repeat  7px; padding-left: 33px;}
+    </style>
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script src="../js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+    	$(function(){
+    		$(".nav_right p input").focus(function(){
+    			//console.log($(this));
+    			$(this).css("border-color","#f60")
+    		})
+    		$(".nav_right p input").blur(function(){
+    			$(".nav_right p input").css("border-color","#B7B7B7");
+    		})
+    		
+    		$(".top .left li a").each(function(){
+                $(this).mouseover(function(){
+                    $(this).css({"text-decoration":"underline"});
+                });
+                $(this).mouseout(function(){
+                    $(this).css({"text-decoration":"none"});
+                });
+            })
+            //top的a的下划线
+            $(".top .right li:nth-of-type(2)").mouseover(function(){
+                $(this).css({"text-decoration":"underline"});
+            })
+            $(".top .right li:nth-of-type(2)").mouseout(function(){
+                $(this).css({"text-decoration":"none"});
+            })
+            //top中客服服务功能
+            $(".top .right li:nth-of-type(3)").mouseover(function(){
+                $(".top .right li:nth-of-type(3)>i").css({"background":"url(img/2.png) -10px -27px no-repeat","transtion":"0.5"});
+                $(this).css({"background":"#fff"});
+                $(".top .right .phone").css({"display":"block"});
+            })
+            $(".top .right li:nth-of-type(3)").mouseout(function(){
+                $(".top .right li:nth-of-type(3)>i").css({"background":"url(img/2.png) 0 -27px no-repeat"});
+                $(this).css({"background":"#f1f1f1"});
+                $(".top .right .phone").css({"display":"none"});
+            })
+            //登录按钮的下划线
+            $(".nav .news a").mouseover(function(){
+                $(this).css({"text-decoration":"underline"});
+            })
+            $(".nav .news a").mouseout(function(){
+                $(this).css({"text-decoration":"none"});
+            })
+            //foot的a标签的下换线
+            $(".foot .ul_2 a").mouseover(function(){
+                $(this).css({"text-decoration":"underline"});
+            })
+            $(".foot .ul_2 a").mouseout(function(){
+                $(this).css({"text-decoration":"none"});
+            })
+            //开始登录
+            $("#enter").click(function(){
+		//获取用户输入的用户名和密码
+		var usn = $("#username").val();
+		var pwd = $("#password").val();
+		
+		//校验用户名和密码是否正确
+		//获取到cookie中的用户信息
+		var users = $.cookie("registerUsers") ? $.cookie("registerUsers") : "";
+		//将字符串转为对象
+		users = convertStrToObj(users);
+		
+		if(users[usn] == pwd){
+			//登录成功
+			$.cookie("loginedUsers",usn,{expires:7,path:"/"});
+			console.log("登录成功!");
+			location.href = "../index.html";
+		}else{
+			//登录失败
+			alert("用户名和密码不匹配，请确认后重试！");
+		}
+	});
+            
+    	})
+    	//将字符串转为对象
+function convertStrToObj(str){
+	if(!str){ //如果是空字符串
+		return {}; //返回空对象
+	}
+	var users = str.split(":");
+	var obj = {};
+	for(var i = 0; i < users.length; i ++){
+		var userData = users[i].split(",");
+		obj[userData[0]] = userData[1];
+	}
+	return obj;
+}
+
+//将对象转为字符串
+function convertObjToStr(obj){
+	var str = "";
+	//遍历对象
+	for(var usn in obj){
+		var pwd = obj[usn];
+		if(str){
+			str += ":";
+		}
+		str += usn + ',' + pwd;
+	}
+	return str;
+}
+    </script>
+	</head>
+	<body>
+		<div id="topcon">
+    <div class="top">
+        <ul class="left">
+            <li><a href="###" title="">掌上新蛋</a></li>
+            <li><a href="###" title="">企业客户</a></li>
+            <li><a href="###" title="">入住开放平台</a></li>
+        </ul>
+        <ul class="right">
+            <li>欢迎来新蛋购物！</li>
+            <li><a href="###" title="">帮助中心</a></li>
+            <li><a href="###" title="">客户服务</a><i></i>
+            <div class="phone">
+                <p>400-820-4400</p>
+                <p>021-67072999</p>
+                <p>每天 9:00 - 18:00</p>
+                <i><a href="">在线咨询</a></i><i><a href="">邮件我们</a></i>
+                <i><a href="">预约来电</a></i>
+            </div></li>
+        </ul>
+    </div>
+</div>
+    <div class="logo">
+        <a href="index.html"></a>
+        <h2>新用户注册</h2>
+    </div>
+    <div id="navcon">
+    	<div class="nav">
+    		<div class="nav_left">
+    			<a href="">
+    				<img src="../img/478x362.jpg"/>
+    			</a>
+    		</div>
+    		<div class="nav_right">
+    			<h4>登录新蛋<a href="">注册新用户>></a></h4>
+    			<p><i></i><input type="text" name="" id="username" value="" placeholder="用戶名/已驗證手機或郵箱"/></p>
+    			<p><i></i><input type="password" name="" id="password" value="" /></p>
+    			<p><a href="">账户安全</a><a href="">忘记密码？</a></p>
+    			<span id="enter">
+    				立即登录
+    			</span>
+    			<div class="partner">
+    				<p>您还可以使用以下合作伙伴的账户登录新蛋网：</p>
+    				<ul>
+    					<li><a href="">支付宝</a></li>
+    					<li><a href="">QQ</a></li>
+    					<li><a href="">微信</a></li>
+    					<li><a href="">新浪微博</a></li>
+    					<li><a href="">手机支付</a></li>
+    					<li><a href="">盛大登录</a></li>
+    					<li><a href="">迅雷</a></li>
+    					<li><a href="">莆田政府采购登录</a></li>
+    				</ul>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+    <div class="foot">
+        <ul class="ul_1">
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+        </ul>
+        <ul class="ul_2">
+            <li>新蛋集团网站：</li>
+            <li><a href="">美国新蛋</a></li>
+            <li><a href="">中国新蛋</a></li>
+            <li><a href="">加拿大新蛋</a></li>
+            <li><a href="">新蛋软件</a></li>
+        </ul>
+        <p>© 2001-2017 新蛋商贸（上海）有限公司 版权所有 沪ICP备:16033615</p>
+    </div>
+	</body>
+</html>

@@ -74,8 +74,17 @@ li,ul{list-style: none;}
 #slider_07 .radius .move-radius_07{float: left;display: inline-block;width: 18px;height: 16px;text-align: :center;line-height: 16px;margin-left: 10px;cursor: pointer;position:relative;background:#737373;border-radius:50%;top:3px;color: #fff;
     font-size: 12px;
 }
+/*#slider_09{height:100%;position:relative;width:100%;overflow:hidden;}
+#slider_09 .slider-room_09{width:690px;position:absolute;height:100%;}
+#slider_09 .slider-room_09 li{float:left;width:230px;height:123px;};
+#slider_09 .slider-room_09 li img{width:230px;height:123px;}
+#slider_09 .slider-room_09 li a{display:block;width:100%;height:100%;}*/
 #slider_09{height:100%;position:relative;width:100%;overflow:hidden;}
 #slider_09 .slider-room_09{width:690px;position:absolute;height:100%;}
 #slider_09 .slider-room_09 li{float:left;width:230px;height:123px;};
 #slider_09 .slider-room_09 li img{width:230px;height:123px;}
 #slider_09 .slider-room_09 li a{display:block;width:100%;height:100%;}
+#slider_09 .radius{position:absolute;height:16px;right: 5px;bottom: 6px;text-align:center;}
+#slider_09 .radius .move-radius_09{float: left;display: inline-block;width: 18px;height: 16px;text-align: :center;line-height: 16px;margin-left: 10px;cursor: pointer;position:relative;background:#737373;border-radius:50%;top:3px;color: #fff;
+    font-size: 12px;opacity: 0;
+}

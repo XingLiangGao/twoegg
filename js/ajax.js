@@ -3,8 +3,11 @@ function lunbo(a,b,id){
 		var uu = document.getElementsByClassName(a)[0];
 		var spp = document.getElementsByClassName(b);
 		var left = uu.offsetWidth / spp.length;
+		//console.log(uu);
+		left = parseInt(left);
 			var nowz = 0;
 			var timer = null;
+			spp[0].style.background = "#f60";
 			function init(){
 				move(uu,{left:-nowz*left})
 				for(var i=0;i<spp.length;i ++){

@@ -3,7 +3,7 @@
 * @Author: Marte
 * @Date:   2017-10-27 22:43:42
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-10-27 22:43:56
+* @Last Modified time: 2017-10-28 16:44:16
 */
 /*
 * @Author: Marte
@@ -277,7 +277,8 @@ strong, b {
       width: 175px;
       height: 465px;
       border: 2px solid #f60;
-      overflow: hidden; }
+      overflow: hidden;
+      background: #fff; }
       .navcon .shop .menue ul {
         text-align: left;
         overflow: hidden; }
@@ -376,7 +377,8 @@ strong, b {
       float: left;
       padding: 0 20px;
       height: 40px;
-      line-height: 40px; }
+      line-height: 40px;
+      transition: 0.5s; }
       .navcon > ul li a {
         color: #fff;
         font: 14px/40px microsoft yahei; }
@@ -1095,3 +1097,530 @@ strong, b {
         font-weight: bold;
         font-size: 12px;
         margin-bottom: 4px; }
+
+.tier {
+  width: 100%;
+  height: 29px;
+  background: #f0f0f0; }
+  .tier .tier_con {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto; }
+    .tier .tier_con span {
+      margin: 0 6px 0 11px;
+      color: #777;
+      line-height: 29px; }
+    .tier .tier_con a {
+      color: #777;
+      line-height: 29px; }
+    .tier .tier_con i {
+      color: #333; }
+
+.suspend {
+  width: 100%;
+  overflow: hidden;
+  background: #f0f0f0;
+  margin-bottom: 33px; }
+  .suspend .sus_con {
+    width: 1200px;
+    margin: 0 auto; }
+    .suspend .sus_con ul li {
+      float: left;
+      width: 102px;
+      height: 39px;
+      box-sizing: border-box;
+      border-radius: 4px 4px 0 0;
+      text-align: center;
+      line-height: 39px;
+      color: #787878; }
+    .suspend .sus_con ul li:nth-of-type(1) {
+      border-top: 3px solid #f60;
+      color: #000;
+      font-weight: bold;
+      background: #fff; }
+
+.message {
+  width: 100%;
+  overflow: hidden; }
+  .message .mess_con {
+    width: 1200px;
+    margin: 0 auto; }
+    .message .mess_con .mess_left {
+      float: left; }
+      .message .mess_con .mess_left > div {
+        width: 492px;
+        margin-bottom: 70px;
+        text-align: center; }
+        .message .mess_con .mess_left > div img {
+          height: 332px; }
+      .message .mess_con .mess_left ul {
+        overflow: hidden; }
+        .message .mess_con .mess_left ul li {
+          width: 66px;
+          height: 64px;
+          float: left;
+          margin-right: 48px; }
+        .message .mess_con .mess_left ul li:nth-of-type(1) {
+          width: 16px;
+          background: url(../img/pro_b_6.png) no-repeat 0 -152px; }
+        .message .mess_con .mess_left ul li:nth-of-type(5) {
+          width: 16px;
+          background: url(../img/pro_b_6.png) no-repeat -19px -152px;
+          margin: 0; }
+    .message .mess_con .h4 {
+      width: 1200px;
+      overflow: hidden; }
+      .message .mess_con .h4 h2 {
+        line-height: 28px;
+        font-weight: bold;
+        float: right;
+        width: 710px;
+        font-size: 20px;
+        margin-bottom: 3px;
+        color: #000; }
+    .message .mess_con .mess_center {
+      float: left;
+      overflow: hidden;
+      width: 509px;
+      overflow: hidden; }
+      .message .mess_con .mess_center ul li {
+        width: 506px;
+        overflow: hidden;
+        margin-right: 36px; }
+        .message .mess_con .mess_center ul li span {
+          display: inline-block;
+          width: 52px;
+          text-align: left;
+          margin-right: 20px;
+          margin-bottom: 16px;
+          float: left; }
+        .message .mess_con .mess_center ul li a {
+          float: left; }
+      .message .mess_con .mess_center ul li:nth-of-type(1) {
+        margin-top: 12px; }
+      .message .mess_con .mess_center ul li:nth-of-type(3) {
+        line-height: 32px; }
+        .message .mess_con .mess_center ul li:nth-of-type(3) a {
+          color: #f60;
+          float: left; }
+        .message .mess_con .mess_center ul li:nth-of-type(3) img {
+          float: left; }
+      .message .mess_con .mess_center ul li:nth-of-type(4) {
+        height: 59px;
+        line-height: 59px; }
+        .message .mess_con .mess_center ul li:nth-of-type(4) a {
+          display: inline-block;
+          width: 90px;
+          height: 48px;
+          float: left;
+          background: url(../img/promise_logoV3.png) no-repeat 20px -472px;
+          padding-top: 22px; }
+      .message .mess_con .mess_center ul li:nth-of-type(5) {
+        height: 36px;
+        line-height: 36px;
+        margin-top: 10px; }
+        .message .mess_con .mess_center ul li:nth-of-type(5) a {
+          display: inline-block;
+          width: 28px;
+          height: 30px;
+          border: 1px solid #bfbfbf;
+          float: left;
+          margin-right: 8px; }
+          .message .mess_con .mess_center ul li:nth-of-type(5) a img {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            float: left;
+            margin-top: 3px; }
+      .message .mess_con .mess_center ul li:nth-of-type(6) {
+        height: 36px;
+        line-height: 36px;
+        margin-top: 10px; }
+        .message .mess_con .mess_center ul li:nth-of-type(6) a {
+          display: inline-block;
+          width: 78px;
+          height: 29px;
+          text-align: center;
+          line-height: 29px;
+          border: 1px solid #bfbfbf;
+          margin-right: 10px; }
+      .message .mess_con .mess_center ul li:nth-of-type(7) {
+        height: 36px;
+        line-height: 36px;
+        margin-top: 10px; }
+        .message .mess_con .mess_center ul li:nth-of-type(7) div {
+          width: 124px;
+          height: 28px;
+          border: 1px solid #bfbfbf;
+          float: left;
+          margin-right: 22px; }
+          .message .mess_con .mess_center ul li:nth-of-type(7) div strong {
+            display: inline-block;
+            width: 24px;
+            height: 28px;
+            text-align: center;
+            line-height: 28px;
+            color: #bfbfbf;
+            float: left; }
+          .message .mess_con .mess_center ul li:nth-of-type(7) div strong:nth-of-type(1) {
+            border-right: 1px solid #bfbfbf; }
+          .message .mess_con .mess_center ul li:nth-of-type(7) div strong:nth-of-type(2) {
+            border-left: 1px solid #bfbfbf; }
+          .message .mess_con .mess_center ul li:nth-of-type(7) div input {
+            width: 38px;
+            height: 25px;
+            color: #bfbfbf;
+            border: 0;
+            float: left;
+            padding-left: 35px;
+            color: #000; }
+        .message .mess_con .mess_center ul li:nth-of-type(7) i {
+          color: green;
+          margin-right: 8px; }
+        .message .mess_con .mess_center ul li:nth-of-type(7) b {
+          color: green; }
+      .message .mess_con .mess_center .btn {
+        width: 448px;
+        height: 96px;
+        background: #f0f0f0;
+        float: left;
+        margin-top: 52px;
+        padding: 19px; }
+        .message .mess_con .mess_center .btn > a {
+          display: inline-block;
+          width: 214px;
+          height: 47px;
+          text-align: center;
+          line-height: 47px;
+          color: #fff; }
+        .message .mess_con .mess_center .btn > a:nth-of-type(1) {
+          background: #f60;
+          margin-right: 20px; }
+        .message .mess_con .mess_center .btn > a:nth-of-type(2) {
+          background: #1c429a; }
+        .message .mess_con .mess_center .btn p {
+          height: 100px; }
+          .message .mess_con .mess_center .btn p a {
+            display: inline-block;
+            width: 81px;
+            height: 32px;
+            color: #000;
+            text-align: center;
+            line-height: 32px;
+            border: 1px solid #bfbfbf;
+            margin-top: 18px;
+            margin-right: 8px;
+            background: #fff;
+            text-decoration: none;
+            float: left; }
+          .message .mess_con .mess_center .btn p a:nth-of-type(2) {
+            text-align: left; }
+            .message .mess_con .mess_center .btn p a:nth-of-type(2) i {
+              display: inline-block;
+              width: 32px;
+              height: 32px;
+              background: url(../img/pro_l_10.png) no-repeat -158px -414px;
+              float: left; }
+          .message .mess_con .mess_center .btn p a:nth-of-type(3) {
+            width: 145px;
+            height: 24px;
+            padding: 4px 9px;
+            margin-top: 18px; }
+            .message .mess_con .mess_center .btn p a:nth-of-type(3) i {
+              display: inline-block;
+              width: 24px;
+              height: 24px;
+              margin-right: 9px; }
+            .message .mess_con .mess_center .btn p a:nth-of-type(3) i:nth-of-type(1) {
+              background: url(../img/pro_b_6.png) no-repeat 0 0; }
+            .message .mess_con .mess_center .btn p a:nth-of-type(3) i:nth-of-type(1):hover {
+              background: url(../img/sshare_icons.png) no-repeat 0 0; }
+            .message .mess_con .mess_center .btn p a:nth-of-type(3) i:nth-of-type(2) {
+              background: url(../img/pro_b_6.png) no-repeat -24px 0; }
+            .message .mess_con .mess_center .btn p a:nth-of-type(3) i:nth-of-type(2):hover {
+              background: url(../img/sshare_icons.png) no-repeat 0 -24px; }
+            .message .mess_con .mess_center .btn p a:nth-of-type(3) i:nth-of-type(3) {
+              background: url(../img/pro_b_6.png) no-repeat 0 -269px; }
+            .message .mess_con .mess_center .btn p a:nth-of-type(3) i:nth-of-type(3):hover {
+              background: url(../img/sshare_icons.png) no-repeat 0 -48px; }
+            .message .mess_con .mess_center .btn p a:nth-of-type(3) i:nth-of-type(4) {
+              background: url(../img/pro_b_6.png) no-repeat -24px -269px; }
+            .message .mess_con .mess_center .btn p a:nth-of-type(3) i:nth-of-type(4):hover {
+              background: url(../img/sshare_icons.png) no-repeat 0 -72px; }
+    .message .mess_con .mess_right {
+      width: 188px;
+      float: left;
+      border-left: 1px solid #e8e8e8;
+      padding-left: 10px;
+      height: 509px; }
+      .message .mess_con .mess_right a {
+        display: inline-block;
+        width: 69px;
+        height: 18px;
+        border: 1px solid #e8e8e8;
+        color: #003399;
+        margin-left: 10px;
+        text-align: center;
+        margin-bottom: 8px; }
+      .message .mess_con .mess_right div {
+        height: 78px;
+        width: 180px;
+        border-top: 1px solid #e8e8e8;
+        border-bottom: 1px solid #e8e8e8; }
+        .message .mess_con .mess_right div strong {
+          font: bolder 24px tahoma;
+          color: #f7661f; }
+        .message .mess_con .mess_right div i {
+          display: inline-block;
+          width: 96px;
+          height: 20px;
+          margin-top: 18px;
+          margin-left: 13px;
+          background: url(../img/pro_l_10.png) no-repeat 1px 0px; }
+        .message .mess_con .mess_right div span {
+          display: block;
+          color: #666;
+          margin: 14px 0; }
+      .message .mess_con .mess_right > p {
+        width: 74px;
+        height: 101px;
+        margin: 22px auto 0; }
+        .message .mess_con .mess_right > p b {
+          margin-top: 14px; }
+
+.recommend {
+  width: 1200px;
+  height: 28px;
+  margin-top: 21px;
+  color: #f60;
+  margin: 0 auto;
+  border-bottom: 1px solid #f60; }
+  .recommend h5 {
+    font: bolder 16px/32px microsoft yahei;
+    padding-bottom: 0;
+    margin-right: 52px;
+    float: left; }
+  .recommend a {
+    display: inline-block;
+    height: 28px;
+    background: #fff;
+    color: #fff;
+    text-align: center;
+    line-height: 28px;
+    margin-right: 16px;
+    padding: 0 14px; }
+  .recommend a:nth-of-type(1) {
+    background: #f60;
+    color: #fff; }
+
+.recom {
+  width: 1200px;
+  margin: 0 auto;
+  border: 1px solid #e6e6e6;
+  height: 276px;
+  position: relative; }
+  .recom ul {
+    overflow: hidden;
+    clear: both;
+    height: 100%; }
+    .recom ul li {
+      margin-top: 26px;
+      width: 129px;
+      height: 178px;
+      float: left;
+      margin-right: 37px; }
+      .recom ul li img {
+        display: block;
+        width: 126px;
+        height: 92px;
+        border: 1px solid #E6E6E6; }
+      .recom ul li i {
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        background: url(../img/pro_l_10.png) no-repeat -48px -414px;
+        margin-right: 6px; }
+      .recom ul li b {
+        display: inline-block;
+        width: 9px;
+        height: 23px;
+        background: url(../img/pro_b_6.png) no-repeat 0 -75px; }
+      .recom ul li p {
+        margin-top: 24px;
+        color: #666; }
+        .recom ul li p span {
+          margin-right: 4px;
+          color: #628100; }
+      .recom ul li div span {
+        color: #f60; }
+    .recom ul li:nth-of-type(1) {
+      margin-right: 12px;
+      margin-left: 34px; }
+    .recom ul li:nth-of-type(2) {
+      width: 38px;
+      height: 20px;
+      margin-top: 96px;
+      margin-right: 12px; }
+    .recom ul > p {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background: #f4f4f4;
+      overflow: hidden; }
+      .recom ul > p .ppp {
+        display: inline-block;
+        width: 390px;
+        float: right;
+        font-style: normal; }
+        .recom ul > p .ppp > span {
+          display: inline-block;
+          width: 82px;
+          height: 21px;
+          background: #f60;
+          color: #fff;
+          text-align: center;
+          line-height: 21px;
+          float: left;
+          margin-top: 2px; }
+        .recom ul > p .ppp > i {
+          display: inline-block;
+          width: 112px;
+          text-align: center;
+          float: left;
+          height: 25px;
+          line-height: 25px;
+          color: #f60; }
+        .recom ul > p .ppp > strong {
+          display: inline-block;
+          width: 70px;
+          height: 25px;
+          background: #f60;
+          color: #fff;
+          text-align: center;
+          line-height: 25px;
+          float: left;
+          margin: 0 5px; }
+        .recom ul > p .ppp > b {
+          display: inline-block;
+          width: 103px;
+          height: 25px;
+          background: #1c429a;
+          text-align: center;
+          line-height: 25px;
+          color: #fff;
+          float: left; }
+
+.error {
+  width: 1200px;
+  height: 23px;
+  border-top: 1px solid #dddddd;
+  margin: 0 auto;
+  margin-top: 22px; }
+  .error div {
+    color: #666;
+    float: right; }
+  .error span {
+    color: #1c429a; }
+
+.pic {
+  width: 1200px;
+  margin: 0 auto; }
+  .pic img {
+    margin-bottom: 38px; }
+  .pic img:nth-of-type(1) {
+    margin-bottom: 12px; }
+  .pic img:nth-of-type(2) {
+    margin: 0; }
+  .pic img:nth-of-type(3) {
+    margin-bottom: 12px; }
+  .pic img:nth-of-type(4) {
+    margin: 0; }
+
+.serve {
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  clear: both;
+  margin-bottom: 80px;
+  margin-top: 126px; }
+  .serve ul {
+    float: left;
+    width: 218px;
+    height: 184px;
+    border-right: 1px solid #dbdbdb;
+    padding-left: 20px; }
+    .serve ul p {
+      height: 40px;
+      padding-left: 34px;
+      font-weight: bold;
+      font-size: 14px; }
+    .serve ul li {
+      background: url(../img/dot.gif) no-repeat 10px 8px;
+      padding-left: 34px;
+      margin-bottom: 10px; }
+  .serve .ul_04 p {
+    background: url(../img/helpcenter.gif) no-repeat 0 2px; }
+  .serve .ul_05 p {
+    background: url(../img/helpcenter.gif) no-repeat 0 -113px; }
+  .serve .ul_06 p {
+    background: url(../img/SpecialServies.png) no-repeat 0 2px; }
+  .serve .ul_07 p {
+    background: url(../img/helpcenter.gif) no-repeat 0 -152px; }
+  .serve .ul_08 {
+    border-right: 0; }
+    .serve .ul_08 p {
+      background: url(../img/helpcenter.gif) no-repeat 0 -190px; }
+
+.police {
+  width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 14px; }
+  .police .pol_01 {
+    width: 650px;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden; }
+    .police .pol_01 li {
+      float: left; }
+      .police .pol_01 li a {
+        display: inline-block;
+        width: 130px;
+        height: 45px; }
+    .police .pol_01 li:nth-of-type(1) a {
+      background: url(../img/certi20150925.png) no-repeat; }
+    .police .pol_01 li:nth-of-type(2) a {
+      background: url(../img/certi20150925.png) no-repeat 0 -92px; }
+    .police .pol_01 li:nth-of-type(3) a {
+      background: url(../img/certi20150925.png) no-repeat 0 -276px; }
+    .police .pol_01 li:nth-of-type(4) a {
+      background: url(../img/certi20150925.png) no-repeat 0 -326px; }
+    .police .pol_01 li:nth-of-type(5) a {
+      background: url(../img/certi20150925.png) no-repeat 0 -376px; }
+  .police .pol_02 {
+    width: 340px;
+    margin: 14px auto 0;
+    clear: both;
+    overflow: hidden; }
+    .police .pol_02 span {
+      float: left;
+      font-family: tahoma,宋体;
+      font-size: 12px;
+      line-height: 1.5;
+      color: #484848; }
+    .police .pol_02 li {
+      float: left;
+      margin-right: 12px; }
+      .police .pol_02 li a {
+        font-family: tahoma,宋体;
+        font-size: 12px;
+        line-height: 1.5;
+        color: #484848; }
+    .police .pol_02 li:nth-of-type(4) {
+      margin-right: 0; }
+  .police .pol_03 {
+    width: 410px;
+    margin: 16px auto 42px;
+    overflow: hidden; }
+    .police .pol_03 li {
+      float: left;
+      margin-right: 8px; }

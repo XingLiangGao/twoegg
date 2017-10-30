@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2017-10-27 10:39:15
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-10-27 22:30:13
+* @Last Modified time: 2017-10-28 17:10:17
 */
 @import "reset";
 #topcon{
@@ -181,11 +181,13 @@
         .menue{
             display:none;
             position:absolute;
+            background:#fff;
             top:39px;
             width:175px;
             height:465px;
             border: 2px solid #f60;
             overflow: hidden;
+            z-index:1;
             ul{
                 text-align: left;
                 overflow:hidden;
@@ -270,6 +272,9 @@
                         width:100%;
                         left:0px;
                         padding-top:6px;
+                        &:hover{
+                            background: #fff !important; 
+                        } 
                     }
                     >div:nth-of-type(1){
                         top:30px;
@@ -297,6 +302,7 @@
             padding: 0 20px;
             height:40px;
             line-height:40px;
+            transition:0.5s;
             a{
                 color:#fff;
                 font: 14px/40px microsoft yahei;
@@ -1202,11 +1208,20 @@
                         display:inline-block;
                         margin-left:-14px;
                         margin-right:6px;
-                        background:url(../img/cate_menu.png) no-repeat -1px -81px;
+                        background:url(../img/cate_menu.png) no-repeat 2px -46px;
                     }
                 }
+                p:nth-of-type(1){ 
+                    i{
+                        background-position: -2px -81px;
+                    }
+                }
+                    
                 ul{
                     width:100%;
+//                  transition: 2s;
+                    overflow: hidden;
+                    height: 0;
                     li{
                         width:100%;
                         padding:6px 0 6px 10px;
@@ -1217,15 +1232,21 @@
                         }
                     }
                 }
+                ul:nth-of-type(1){
+                    height:auto;
+                }
+               
+
 
             }
             .pro_le02{
-                width:177px;
+                width:176px;
                 border:1px solid #dbdbdb;
                 margin-bottom: 10px;
+                position: relative;
                 >a{
                     display:inline-block;
-                    width:87px;
+                    width:88px;
                     height:29px;
                     line-height:29px;
                     text-align:center;
@@ -1243,20 +1264,41 @@
                         height:75px;
                         border-bottom:1px solid #dbdbdb;
                         padding-top:17px;
+                        position: relative;
                         img{
                             width:60px;
                             height:45px;
                             float:left;
                         }
+                        >span{
+                            width: 30px;
+                            height: 18px;
+                            background: #f60;
+                            color: #fff;
+                            text-align: center;
+                            line-height: 18px;
+                            position: absolute;
+                            left: 8px;
+                            top: 16px;
+                        }
                         div{
                             width:96px;
                             height:60px;
                             float:left;
+                            span{
+                                color: #f60;
+                                display: block;
+                                font-family: arial;
+                                font-weight: bold;
+                            }
                         }
                         a{
                             line-height:18px;
                         }
                     }
+                }
+                ul:nth-of-type(2){
+                    background: #fff;
                 }
             }
             .pro_le03{
@@ -1285,8 +1327,13 @@
                         margin-left:34px;
                         margin-right:14px;
                     }
+                    strong:hover{
+                        background: #FA8B29;
+                        cursor: pointer;
+                    }
                     a{
                         color:#003399;
+                        font-weight: 100;
                     }
                 }
                 ul{
@@ -1357,6 +1404,10 @@
                                     color:#ccc;
                                 }
                             }
+                            li:hover{
+                                color:#f60;
+                                cursor: pointer;
+                            }
                         }
                     }
                     >li:nth-of-type(1){
@@ -1379,6 +1430,9 @@
                                     text-align:center;
                                     background:#f60;
                                     color:#fff;
+                                }
+                                span:hover{
+                                    background: #FA8B29;
                                 }
                                 input{
                                     width:40px;
@@ -1403,6 +1457,10 @@
                                 height:23px;
                                 line-height:23px;
                                 margin-top:2px;
+                            }
+                            li:hover{
+                                color: darkblue;
+                                cursor: default;
                             }
                         }
                     }
@@ -1434,13 +1492,18 @@
                                 a{
                                     color:#666;
                                 }
+                                a:hover{
+                                    color:darkblue;
+                                }
+                            }
+                            li:hover{
+                                color:darkblue;
                             }
                             li:nth-of-type(4){
                                 width:84px;
                             }
                         }
                         ul:nth-of-type(2){
-
                             li{
                                 width:38px;
                                 height:37px;
@@ -1450,6 +1513,9 @@
                                 float:left;
                                 a{
                                     color:#666;
+                                }
+                                a:hover{
+                                    color:darkblue;
                                 }
                             }
                         }
@@ -1481,6 +1547,9 @@
                                 line-height:25px;
                                 margin-top:5px;
                             }
+                            a:hover{
+                                background: #FA8B29;
+                            }
                         }
 
                     }
@@ -1511,6 +1580,10 @@
                                 margin-left:6px;
                                 margin-right:6px;
                                 padding-left:6px;
+                            }
+                            input:hover{
+                                border-color: #f60;
+                                cursor: pointer;
                             }
                         }
                     }
@@ -1548,6 +1621,9 @@
                             color:#fff;
                             margin:7px 14px 0 10px;
                             float:left;
+                        }
+                        b:hover{
+                            background: #FA8B29;
                         }
                         a{color:#003399;}
                     }
@@ -1588,6 +1664,14 @@
                                 color:#0033a5;
                                 margin-left:61px;
                             }
+                            em:hover{
+                                color: red;
+                                cursor: pointer;
+                            }
+                        }
+                        strong:hover{
+                            background: #FA8B29;
+                            cursor: pointer;
                         }
                         b{
                             display:block;
@@ -1615,6 +1699,10 @@
                             line-height:23px;
                             margin-left:5px;
                             margin-top:22px;
+                        }
+                        i:hover{
+                            border-color: #DBDBDB;
+                            cursor: pointer;
                         }
                     }
                 }
@@ -1645,6 +1733,10 @@
                         float:left;
                         margin-right:5px;
                     }
+                    b:hover{
+                        border-color: #f60;
+                        color: #f60;
+                    }
                     a{
                         display:inline-block;
                         width:19px;
@@ -1654,6 +1746,17 @@
                         color:#666;
                         margin-right:12px;
                         float:left;
+                        border:1px solid #fff;
+                    }
+                    a:hover{
+                        border:1px solid #f60;
+                        color: #f60;
+                    }
+                    a:nth-of-type(4){
+                        border:0;
+                        color: #666;
+                        text-decoration: none;
+                        cursor: default;
                     }
                     a:nth-of-type(1){
                         border:1px solid #f60;
@@ -1722,6 +1825,9 @@
             background:url(../img/dot.gif) no-repeat 10px 8px;
             padding-left:34px;
             margin-bottom:10px;
+        }
+        a:hover{
+            color:darkslateblue;
         }
     }
     .ul_04{
